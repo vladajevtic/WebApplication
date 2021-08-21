@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Customer>
+
+<h1>@ViewBag.Title</h1>
+<div>
+    <ul>
+        @foreach( var customer in Model)
+        {
+            <li>@customer.Name <a href="/Customer/CustomerDetails/@customer.Id">Details</a></li>
+        }
+    </ul>
+</div>
