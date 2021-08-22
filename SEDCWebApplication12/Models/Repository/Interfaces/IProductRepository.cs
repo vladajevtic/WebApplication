@@ -12,5 +12,9 @@ namespace SEDCWebApplication12.Models.Repository.Interfaces
         Product GetProductById(int id);
 
         Product AddProduct(Product product);
+
+        //Product DeleteProduct(int id);
+
+        //Product SaveProduct(Product product);
     }
 }

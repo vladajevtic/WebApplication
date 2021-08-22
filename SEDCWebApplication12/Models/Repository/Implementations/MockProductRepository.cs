@@ -103,5 +103,16 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
             _productList.Add(product);
             return _productList.Where(x => x.ProductId == product.ProductId).FirstOrDefault();
         }
+
+        //public Product DeleteProduct(int id)
+        //{
+        //    var deleted = _productList.Where(x => x.ProductId == id).FirstOrDefault();
+            
+        //}
+
+        //public Product SaveProduct(Product product)
+        //{
+
+        //}
     }
 }
