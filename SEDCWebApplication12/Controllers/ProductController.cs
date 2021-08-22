@@ -48,7 +48,7 @@ namespace SEDCWebApplication12.Controllers
             return RedirectToAction("ProductList");
         }
 
-        
+        [Route("ProductEdit/{id}")]
         public IActionResult ProductEdit(int id)
         {
             var editProduct = _product.GetProductById(id);
