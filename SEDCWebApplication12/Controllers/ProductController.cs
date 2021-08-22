@@ -34,5 +34,25 @@ namespace SEDCWebApplication12.Controllers
 
             return View(product);
         }
+
+        [HttpGet]
+        public IActionResult ProductCreate()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult ProductCreate(Product product)
+        {
+            _product.AddProduct(product);
+            return RedirectToAction("ProductList");
+        }
+
+        
+        public IActionResult ProductEdit(int id)
+        {
+            var editProduct = _product.GetProductById(id);
+            return View(editProduct);
+        }
     }
 }

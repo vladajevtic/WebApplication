@@ -10,5 +10,7 @@ namespace SEDCWebApplication12.Models.Repository.Interfaces
         IEnumerable<Product> GetAllProduct();
 
         Product GetProductById(int id);
+
+        Product AddProduct(Product product);
     }
 }

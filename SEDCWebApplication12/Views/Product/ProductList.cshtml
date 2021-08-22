@@ -2,17 +2,21 @@
 
 
 <div class="container">
+    <a class="bg-primary text-white" asp-controller="Product" asp-action="ProductCreate">Add Product</a>
     <div class="card-columns">
         @foreach (var product in Model)
         {
 
-            <div class="card card-user bg-secondary text-light" >
+            <div class="card card-user bg-secondary text-light">
                 <img class="card-img-top" src="@product.Picture" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h4 class="card-title">@product.ProductName</h4>
                     <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                    <a class="bg-dark text-white"  asp-controller="Product" asp-action="ProductDetails" asp-route-id="@product.ProductId">See Profile</a>
-                    <button class="btn-primary">@product.UnitPrice $</button>
+                    <a class="bg-dark text-white" asp-controller="Product" asp-action="ProductDetails" asp-route-id="@product.ProductId">See Profile</a>
+                    <div class="row justify-content-between">
+                        <a class="bg-primary text-white" asp-controller="Product" asp-action="ProductEdit">Edit</a>
+                        <button class="btn-primary">@product.UnitPrice $</button>
+                    </div>
                 </div>
             </div>
 

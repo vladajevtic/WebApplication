@@ -1,12 +1,21 @@
 ﻿@model IEnumerable<Employee>
 
-
 <h1>@ViewBag.Title</h1>
-<div>
-    <ul>
-        @foreach ( var employee in Model)
+
+<div class="container">
+    <a asp-controller="Employee" asp-action="EmployeeCreate">Create New</a>
+    <div class="card-columns">
+        @foreach (var employee in Model)
         {
-        <li>@employee.Name, @employee.Company <a href="/Employee/EmployeeDetails/@employee.Id">Details</a></li>
+
+            <div class="card card-user">
+                <img class="card-img-top" src="~/image/avatar.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">@employee.Name</h4>
+                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                    <a asp-controller="employee" asp-action="EmployeeDetails" asp-route-id="@employee.Id">See Profile</a>
+                </div>
+            </div>
         }
-    </ul>
+    </div>
 </div>

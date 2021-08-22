@@ -41,5 +41,31 @@ namespace SEDCWebApplication12.Controllers
             };
             return View(employeeVM);
         }
+        [HttpGet]
+        public IActionResult EmployeeCreate()
+        {
+            //EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel();
+            /*employeeVM.Roles = new List<SelectListItem>
+            {
+                new SelectListItem {Text = "Shyju", Value = "1"},
+                new SelectListItem {Text = "Sean", Value = "2"}
+            };*/
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult EmployeeCreate(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("Details", new { id = newEmployee.Id });
+            }
+            else
+            {
+                return View();
+            }
+
+        }
     }
 }
