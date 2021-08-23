@@ -49,10 +49,21 @@ namespace SEDCWebApplication12.Controllers
         }
 
         [Route("ProductEdit/{id}")]
+        [HttpGet]
         public IActionResult ProductEdit(int id)
         {
             var editProduct = _product.GetProductById(id);
             return View(editProduct);
+        }
+
+        [HttpPost]
+        public IActionResult ProductEdit(int id, Product product)
+        {
+            _product.DeleteProduct(id, product);
+
+
+            
+            return RedirectToAction("ProductList");
         }
     }
 }

@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SEDCWebApplication12",
+    "\\SEDCWebApplication12\\Models",
+    "\\SEDCWebApplication12\\Models\\Repository",
+    "\\SEDCWebApplication12\\Models\\Repository\\Interfaces"
   ],
-  "SelectedNode": "\\SEDCWebApplication12.sln",
+  "SelectedNode": "\\SEDCWebApplication12\\Models\\Repository\\Interfaces\\IProductRepository.cs",
   "PreviewInSolutionExplorer": false
 }
