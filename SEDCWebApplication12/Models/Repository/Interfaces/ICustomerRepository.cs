@@ -10,5 +10,6 @@ namespace SEDCWebApplication12.Models.Repository.Interfaces
         IEnumerable<Customer> GetAllCustomers();
 
         Customer GetCustomerById(int id);
+        Customer Add(Customer customer);
     }
 }

@@ -18,6 +18,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id=1,
                     Name="Pera",
+                    Email = "www.nesro.com",
                     Role=RoleEnum.Manager,
                     Test = true
                 },
@@ -25,6 +26,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id=2,
                     Name="Mika",
+                    Email = "www.nesro.com",
                     Role=RoleEnum.Sales,
                     Test = false
                 },
@@ -32,6 +34,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id=3,
                     Name="Laza",
+                    Email = "www.nesro.com",
                     Role=RoleEnum.Operater
                 }
             };

@@ -17,19 +17,25 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id = 1,
                     Name = "Pera",
-                    ContactId = 1
+                    ContactId = 1,
+                    Email = "nest@gmail.com",
+                    Picture = "../image/avatar.png"
                 },
                 new Customer
                 {
                     Id = 2,
                     Name = "Mika",
-                    ContactId = 2
+                    ContactId = 2,
+                    Email = "nest@gmail.com",
+                    Picture = "../image/avatar.png"
                 },
                 new Customer
                 {
                     Id = 3,
                     Name = "Zika",
-                    ContactId = 3
+                    ContactId = 3,
+                    Email = "nest@gmail.com",
+                    Picture = "../image/avatar.png"
                 }
             };
         }
@@ -42,6 +48,12 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
         public Customer GetCustomerById(int id)
         {
             return _customerList.Where(x => x.Id == id).FirstOrDefault();
+        }
+        public Customer Add(Customer customer)
+        {
+            customer.Id = _customerList.Max(e => e.Id) + 1;
+            _customerList.Add(customer);
+            return _customerList.Where(x => x.Id == customer.Id).FirstOrDefault();
         }
     }
 }

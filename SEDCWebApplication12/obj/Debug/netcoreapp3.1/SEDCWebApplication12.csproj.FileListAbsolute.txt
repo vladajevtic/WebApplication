@@ -93,3 +93,4 @@ C:\Users\vlada\source\repos\WebApplication\SEDCWebApplication12\obj\Debug\netcor
 C:\Users\vlada\source\repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\SEDCWebApplication12.csproj.CopyComplete
 C:\Users\vlada\source\repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\Razor\Views\Product\ProductCreate.cshtml.g.cs
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\Razor\Views\Product\ProductEdit.cshtml.g.cs
+C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\Razor\Views\Customer\CustomerCreate.cshtml.g.cs

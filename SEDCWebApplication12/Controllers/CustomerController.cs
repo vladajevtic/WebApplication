@@ -38,9 +38,29 @@ namespace SEDCWebApplication12.Controllers
 
                 PageTitle = "Customer Details"
             };
-
-
             return View(customersVM);
+        }
+        [HttpGet]
+        public IActionResult CustomerCreate()
+        {
+            //EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel();
+            /*employeeVM.Roles = new List<SelectListItem>
+            {
+                new SelectListItem {Text = "Shyju", Value = "1"},
+                new SelectListItem {Text = "Sean", Value = "2"}
+            };*/
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CustomerCreate(Customer customer)
+        {
+            
+            
+                Customer newCustomer = _customerRepository.Add(customer);
+                return RedirectToAction("CustomerList");
+            
+
         }
     }
 }
