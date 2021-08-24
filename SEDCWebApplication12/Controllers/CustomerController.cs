@@ -43,24 +43,20 @@ namespace SEDCWebApplication12.Controllers
         [HttpGet]
         public IActionResult CustomerCreate()
         {
-            //EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel();
-            /*employeeVM.Roles = new List<SelectListItem>
-            {
-                new SelectListItem {Text = "Shyju", Value = "1"},
-                new SelectListItem {Text = "Sean", Value = "2"}
-            };*/
+          
             return View();
         }
 
         [HttpPost]
         public IActionResult CustomerCreate(Customer customer)
         {
-            
-            
+            if (ModelState.IsValid)
+            {
                 Customer newCustomer = _customerRepository.Add(customer);
-                return RedirectToAction("CustomerList");
-            
+                return RedirectToAction("CustomerDetails", new { id = newCustomer.Id });
+            }
 
+            return View();
         }
     }
 }

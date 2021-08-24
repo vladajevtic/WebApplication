@@ -23,7 +23,7 @@ namespace SEDCWebApplication12.Controllers
         public IActionResult EmployeeList()
         {
             List<Employee> employees = _employeeRepository.GetAllEmployees().ToList();
-            
+
             ViewBag.Title = "Employees List";
             return View(employees);
         }
@@ -58,14 +58,10 @@ namespace SEDCWebApplication12.Controllers
         {
             if (ModelState.IsValid)
             {
-                Employee newEmployee = _employeeRepository.Add(employee);
-                return RedirectToAction("Details", new { id = newEmployee.Id });
+            Employee newEmployee = _employeeRepository.Add(employee);
+            return RedirectToAction("EmployeeDetails", new { id = newEmployee.Id });
             }
-            else
-            {
-                return View();
-            }
-
+            return View();
         }
     }
 }

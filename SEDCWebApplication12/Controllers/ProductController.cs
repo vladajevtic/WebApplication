@@ -35,18 +35,25 @@ namespace SEDCWebApplication12.Controllers
             return View(product);
         }
 
+        [Route("ProductCreate")]
         [HttpGet]
         public IActionResult ProductCreate()
         {
             return View();
         }
 
+        [Route("ProductCreate")]
         [HttpPost]
         public IActionResult ProductCreate(Product product)
         {
-            _product.AddProduct(product);
-            return RedirectToAction("ProductList");
+            if (ModelState.IsValid)
+            {
+            Product newProduct = _product.AddProduct(product);
+            return RedirectToAction("ProductDetails", new {id = newProduct.ProductId });
+            }
+            return View();
         }
+
 
         [Route("ProductEdit/{id}")]
         [HttpGet]
@@ -56,14 +63,17 @@ namespace SEDCWebApplication12.Controllers
             return View(editProduct);
         }
 
+        [Route("ProductEdit/{id}")]
         [HttpPost]
-        public IActionResult ProductEdit(int id, Product product)
+        public IActionResult ProductEdit(Product product, int id)
         {
-            _product.DeleteProduct(id, product);
-
-
-            
-            return RedirectToAction("ProductList");
+            Product unique = _product.GetProductById(id);
+            unique.ProductName = product.ProductName;
+            unique.UnitPrice = product.UnitPrice;
+            unique.Description = product.Description;
+            unique.Picture = product.Picture;
+             
+            return RedirectToAction("ProductDetails", new { id = unique.ProductId });
         }
     }
 }
