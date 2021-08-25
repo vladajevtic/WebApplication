@@ -4,4 +4,3 @@
         $(this).next('.custom-file-label').html(fileName);
     });
 });
-

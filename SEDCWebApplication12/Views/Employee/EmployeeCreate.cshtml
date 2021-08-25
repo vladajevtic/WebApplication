@@ -44,13 +44,6 @@
     <div asp-validation-summary="All" class="text-danger"></div>
 
     @section Scripts{
-        <script>
-            $(document).ready(function () {
-                $('.custom-file-input').on("change", function () {
-                    var fileName = $(this).val().split("\\").pop();
-                    $(this).next('.custom-file-label').html(fileName);
-                });
-            });
-        </script>
+        <script src="../wwwroot/js/FileUpload.js"></script>
     }
 </form>
