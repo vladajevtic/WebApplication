@@ -20,7 +20,8 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                     Name="Pera",
                     Email = "www.nesro.com",
                     Role=RoleEnum.Manager,
-                    Test = true
+                    Test = true,
+                    ImagePath = "../image/avatar.png"
                 },
                 new Employee
                 {

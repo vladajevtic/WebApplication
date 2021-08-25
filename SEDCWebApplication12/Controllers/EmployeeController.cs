@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using SEDCWebApplication12.Models;
 using SEDCWebApplication12.Models.Repository.Implementations;
@@ -13,10 +16,12 @@ namespace SEDCWebApplication12.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
+        private readonly IHostingEnvironment _hostingEnvironment;
 
-        public EmployeeController(IEmployeeRepository employeeRepository)
+        public EmployeeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment)
         {
             _employeeRepository = employeeRepository;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         [Route("EmployeeList")]
@@ -54,12 +59,27 @@ namespace SEDCWebApplication12.Controllers
         }
 
         [HttpPost]
-        public IActionResult EmployeeCreate(Employee employee)
+        public IActionResult EmployeeCreate(EmployeeCreateViewModel model)
         {
             if (ModelState.IsValid)
             {
-            Employee newEmployee = _employeeRepository.Add(employee);
-            return RedirectToAction("EmployeeDetails", new { id = newEmployee.Id });
+                string uniqueName = "avatar.png";
+                if (model.Photo != null)
+                { 
+                    uniqueName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
+                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "image");
+                    string filePath = Path.Combine(uploadsFolder, uniqueName);
+                    model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
+                }
+                Employee employee = new Employee
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Role = model.Role,
+                    ImagePath = "../image/" + uniqueName
+                };
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("EmployeeDetails", new { id = newEmployee.Id });
             }
             return View();
         }

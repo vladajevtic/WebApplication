@@ -1,20 +1,18 @@
-﻿using SEDCWebApplication.Models;
+﻿using Microsoft.AspNetCore.Http;
+using SEDCWebApplication.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SEDCWebApplication12.Models
+namespace SEDCWebApplication12.ViewModels
 {
-    public class Employee
+    public class EmployeeCreateViewModel
     {
-
-        public int Id { get; set; }
-
         [Required(ErrorMessage = "Ime je obavezno")]
         [RegularExpression(@"^(([A-za-z]+[\s]{1}[A-za-z]+)|([A-Za-z]+))$",
-            ErrorMessage = "Please enter a valid Name")]
+           ErrorMessage = "Please enter a valid Name")]
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Email id is required")]
@@ -22,9 +20,7 @@ namespace SEDCWebApplication12.Models
                             ErrorMessage = "Please enter a valid email address")]
         public string Email { get; set; }
         public RoleEnum Role { get; set; }
-        public string ImagePath { get; set; }
-        public bool Test { get; set; }
 
-
+        public IFormFile Photo { get; set; }
     }
 }
