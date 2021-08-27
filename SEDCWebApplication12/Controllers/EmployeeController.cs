@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using SEDCWebApplication.BLL.Logic.Models;
 using SEDCWebApplication12.Models;
 using SEDCWebApplication12.Models.Repository.Implementations;
 using SEDCWebApplication12.Models.Repository.Interfaces;
@@ -16,18 +17,18 @@ namespace SEDCWebApplication12.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
-        private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public EmployeeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment)
+        public EmployeeController(IEmployeeRepository employeeRepository, IWebHostEnvironment webHostEnvironment)
         {
             _employeeRepository = employeeRepository;
-            _hostingEnvironment = hostingEnvironment;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [Route("EmployeeList")]
         public IActionResult EmployeeList()
         {
-            List<Employee> employees = _employeeRepository.GetAllEmployees().ToList();
+            List<EmployeeDTO> employees = _employeeRepository.GetAllEmployees().ToList();
 
             ViewBag.Title = "Employees List";
             return View(employees);
@@ -36,7 +37,7 @@ namespace SEDCWebApplication12.Controllers
         [Route("EmployeeDetails/{id}")]
         public IActionResult EmployeeDetails(int id)
         {
-            Employee employee = _employeeRepository.GetEmployeeById(id);
+            EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
 
             EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel
             {
@@ -67,18 +68,18 @@ namespace SEDCWebApplication12.Controllers
                 if (model.Photo != null)
                 { 
                     uniqueName = Guid.NewGuid().ToString() + "_" + model.Photo.FileName;
-                    string uploadsFolder = Path.Combine(_hostingEnvironment.WebRootPath, "image");
+                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "image");
                     string filePath = Path.Combine(uploadsFolder, uniqueName);
                     model.Photo.CopyTo(new FileStream(filePath, FileMode.Create));
                 }
-                Employee employee = new Employee
+                EmployeeDTO employee = new EmployeeDTO
                 {
                     Name = model.Name,
                     Email = model.Email,
                     Role = model.Role,
                     ImagePath = "../image/" + uniqueName
                 };
-                Employee newEmployee = _employeeRepository.Add(employee);
+                EmployeeDTO newEmployee = _employeeRepository.Add(employee);
                 return RedirectToAction("EmployeeDetails", new { id = newEmployee.Id });
             }
             return View();

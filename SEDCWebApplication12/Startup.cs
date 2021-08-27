@@ -10,6 +10,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication.BLL.Logic.Interfaces;
+using WebApplication.BLL.Logic.Implementations;
+using WebApplication.DAL.Data.Interfaces;
+using WebApplication.DAL.Data.Implementations;
 
 namespace SEDCWebApplication12
 {
@@ -26,9 +30,12 @@ namespace SEDCWebApplication12
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
+            services.AddAutoMapper(typeof(EmployeeManager));
+            services.AddSingleton<IEmployeeRepository, DataBaseEmployeeRepository>();
             services.AddSingleton<ICustomerRepository, MockCustomerRepository>();
             services.AddSingleton<IProductRepository, MockProductRepository>();
+            services.AddSingleton<IEmployeeManager,EmployeeManager>();
+            services.AddSingleton<IEmployeeDAL, EmployeeDAL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

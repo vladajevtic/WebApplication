@@ -1,20 +1,19 @@
-﻿using SEDCWebApplication.Models;
+﻿using SEDCWebApplication.bll.Logic.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SEDCWebApplication12.Models
+namespace SEDCWebApplication.BLL.Logic.Models
 {
-    public class Employee
+    public class EmployeeDTO
     {
 
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Ime je obavezno")]
-        [RegularExpression(@"^(([A-za-z]+[\s]{1}[A-za-z]+)|([A-Za-z]+))$",
-            ErrorMessage = "Please enter a valid Name")]
+        
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Email id is required")]

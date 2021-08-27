@@ -1,0 +1,9 @@
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.AssemblyInfoInputs.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.AssemblyInfo.cs
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.csproj.CoreCompileInputs.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.deps.json
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
