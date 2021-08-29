@@ -1,4 +1,4 @@
-﻿using SEDCWebApplication.bll.Logic.Models;
+﻿
 using SEDCWebApplication.BLL.Logic.Models;
 
 using SEDCWebApplication12.Models.Repository.Interfaces;

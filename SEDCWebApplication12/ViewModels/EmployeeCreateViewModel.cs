@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
-using SEDCWebApplication.bll.Logic.Models;
+using SEDCWebApplication.BLL.Logic.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

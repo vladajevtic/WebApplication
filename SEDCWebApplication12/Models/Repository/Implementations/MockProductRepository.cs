@@ -3,82 +3,84 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication.BLL.Logic.Models;
+
 
 namespace SEDCWebApplication12.Models.Repository.Implementations
 {
     public class MockProductRepository : IProductRepository
     {
-        private List<Product> _productList;
+        private List<ProductDTO> _productList;
         public MockProductRepository()
         {
-            _productList = new List<Product>
+            _productList = new List<ProductDTO>
             {
-                new Product
+                new ProductDTO
                 {
-                    ProductId = 1,
-                    ProductName = "PICA1",
-                    Size = Size.Large,
-                    UnitPrice = 123,
+                    Id = 1,
+                    Name = "PICA1",
+                    Size = PizzaSize.Medium,
+                    Price = 123,
                     IsDiscounted = false,
                     IsActive = true,
                     IsDeleted = false,
                     Picture = "../image/pica.jpg",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 },
-                 new Product
+                 new ProductDTO
                 {
-                    ProductId = 2,
-                    ProductName = "PICA2",
-                    Size = Size.Medium,
-                    UnitPrice = 456,
+                    Id = 2,
+                    Name = "PICA2",
+                    Size = PizzaSize.Medium,
+                    Price = 456,
                     IsDiscounted = false,
                     IsActive = true,
                     IsDeleted = false,
                     Description = " has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Picture = "../image/pica.jpg"
                 },
-                  new Product
+                  new ProductDTO
                 {
-                    ProductId = 3,
-                    ProductName = "PICA3",
-                    Size = Size.Small,
-                    UnitPrice = 789,
+                    Id = 3,
+                    Name = "PICA3",
+                    Size = PizzaSize.Small,
+                    Price = 789,
                     IsDiscounted = false,
                     IsActive = true,
                     IsDeleted = false,
                     Picture = "../image/pica.jpg",
                     Description = "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 },
-                  new Product
+                  new ProductDTO
                 {
-                    ProductId = 4,
-                    ProductName = "PICA4",
-                    Size = Size.Small,
-                    UnitPrice = 123,
+                    Id = 4,
+                    Name = "PICA4",
+                    Size = PizzaSize.Small,
+                    Price = 123,
                     IsDiscounted = false,
                     IsActive = true,
                     IsDeleted = false,
                     Picture = "../image/pica.jpg",
                     Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 },
-                 new Product
+                 new ProductDTO
                 {
-                    ProductId = 5,
-                    ProductName = "PICA5",
-                    Size = Size.Medium,
-                    UnitPrice = 456,
+                    Id = 5,
+                    Name = "PICA5",
+                    Size = PizzaSize.Medium,
+                    Price = 456,
                     IsDiscounted = false,
                     IsActive = true,
                     IsDeleted = false,
                     Description = " has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                     Picture = "../image/pica.jpg",
                 },
-                  new Product
+                  new ProductDTO
                 {
-                    ProductId = 6,
-                    ProductName = "PICA6",
-                    Size = Size.Large,
-                    UnitPrice = 789,
+                    Id = 6,
+                    Name = "PICA6",
+                    Size = PizzaSize.Large,
+                    Price = 789,
                     IsDiscounted = false,
                     IsActive = true,
                     IsDeleted = false,
@@ -87,24 +89,24 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 }
             };
         }
-        public IEnumerable<Product> GetAllProduct()
+        public IEnumerable<ProductDTO> GetAllProduct()
         {
             return _productList;
         }
 
-        public Product GetProductById(int id)
+        public ProductDTO GetProductById(int id)
         {
-            return _productList.Where(x => x.ProductId == id).FirstOrDefault();
+            return _productList.Where(x => x.Id == id).FirstOrDefault();
         }
 
-        public Product AddProduct(Product product)
+        public ProductDTO AddProduct(ProductDTO product)
         {
-            product.ProductId = _productList.Max(e => e.ProductId) + 1;
+            product.Id = _productList.Max(e => e.Id) + 1;
             _productList.Add(product);
-            return _productList.Where(x => x.ProductId == product.ProductId).FirstOrDefault();
+            return _productList.Where(x => x.Id == product.Id).FirstOrDefault();
         }
 
-        public Product DeleteProduct(int id)
+        public ProductDTO DeleteProduct(int id)
         {
             var delete = _productList.ElementAt(id);
             _productList.Remove(delete);

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using SEDCWebApplication.BLL.Logic.Models;
 using System;
+using WebApplication.BLL.Logic.Models;
 using WebApplication.DAL.Data.Entities;
 
 namespace WebApplication.BLL.Logic
@@ -12,6 +13,7 @@ namespace WebApplication.BLL.Logic
             CreateMap<Employee, EmployeeDTO>();
             CreateMap<EmployeeDTO, Employee>()
                 .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email));
+            CreateMap<Product, ProductDTO>();
 
         }
     }

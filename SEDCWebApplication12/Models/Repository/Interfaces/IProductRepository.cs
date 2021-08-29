@@ -2,19 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication.BLL.Logic.Models;
 
 namespace SEDCWebApplication12.Models.Repository.Interfaces
 {
     public interface IProductRepository
     {
-        IEnumerable<Product> GetAllProduct();
+        IEnumerable<ProductDTO> GetAllProduct();
 
-        Product GetProductById(int id);
+        ProductDTO GetProductById(int id);
 
-        Product AddProduct(Product product);
+        ProductDTO AddProduct(ProductDTO product);
 
-        Product DeleteProduct(int id);
-
-        //Product SaveProduct(Product product);
     }
 }

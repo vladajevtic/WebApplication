@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication.BLL.Logic.Models;
 
 namespace SEDCWebApplication12.Controllers
 {
@@ -22,7 +23,7 @@ namespace SEDCWebApplication12.Controllers
         [Route("ProductList")]
         public IActionResult ProductList()
         {
-            List<Product> products = _product.GetAllProduct().ToList();
+            List<ProductDTO> products = _product.GetAllProduct().ToList();
             return View(products);
         }
 
@@ -44,12 +45,12 @@ namespace SEDCWebApplication12.Controllers
 
         [Route("ProductCreate")]
         [HttpPost]
-        public IActionResult ProductCreate(Product product)
+        public IActionResult ProductCreate(ProductDTO product)
         {
             if (ModelState.IsValid)
             {
-            Product newProduct = _product.AddProduct(product);
-            return RedirectToAction("ProductDetails", new {id = newProduct.ProductId });
+            ProductDTO newProduct = _product.AddProduct(product);
+            return RedirectToAction("ProductDetails", new {id = newProduct.Id });
             }
             return View();
         }
@@ -65,15 +66,15 @@ namespace SEDCWebApplication12.Controllers
 
         [Route("ProductEdit/{id}")]
         [HttpPost]
-        public IActionResult ProductEdit(Product product, int id)
+        public IActionResult ProductEdit(ProductDTO product, int id)
         {
-            Product unique = _product.GetProductById(id);
-            unique.ProductName = product.ProductName;
-            unique.UnitPrice = product.UnitPrice;
+            ProductDTO unique = _product.GetProductById(id);
+            unique.Name = product.Name;
+            unique.Price = product.Price;
             unique.Description = product.Description;
             unique.Picture = product.Picture;
              
-            return RedirectToAction("ProductDetails", new { id = unique.ProductId });
+            return RedirectToAction("ProductDetails", new { id = unique.Id });
         }
     }
 }

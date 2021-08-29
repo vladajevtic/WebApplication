@@ -3,21 +3,24 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication.DAL.Data.Entities;
 
-namespace SEDCWebApplication12.Models
+namespace WebApplication.DAL.Data.Entities
 {
-    public class Product
+    public class Product : ProductsBase
     {
-        public int ProductId { get; set; }
+        public Product(int? id)
+               : base(id)
+        {
+        }
 
-        [Required(ErrorMessage ="Name is required")]
-        public string ProductName { get; set; }
-        public decimal UnitPrice { get; set; }
+        public string Name { get; set; }
+        public decimal Price { get; set; }
         public bool IsDiscounted { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
         public string Description { get; set; }
-        public string Picture { get; set; }
-        public Size Size { get; set; }
+        public string Size { get; set; }
+        
     }
 }

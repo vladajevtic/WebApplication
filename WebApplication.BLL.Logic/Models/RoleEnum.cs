@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SEDCWebApplication.bll.Logic.Models
+namespace SEDCWebApplication.BLL.Logic.Models
 {
     public enum RoleEnum
     {

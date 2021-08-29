@@ -15,6 +15,8 @@ using WebApplication.BLL.Logic.Implementations;
 using WebApplication.DAL.Data.Interfaces;
 using WebApplication.DAL.Data.Implementations;
 
+using WebApplication.BLL.Logic.Models;
+
 namespace SEDCWebApplication12
 {
     public class Startup
@@ -31,11 +33,14 @@ namespace SEDCWebApplication12
         {
             services.AddControllersWithViews();
             services.AddAutoMapper(typeof(EmployeeManager));
-            services.AddSingleton<IEmployeeRepository, DataBaseEmployeeRepository>();
-            services.AddSingleton<ICustomerRepository, MockCustomerRepository>();
-            services.AddSingleton<IProductRepository, MockProductRepository>();
-            services.AddSingleton<IEmployeeManager,EmployeeManager>();
-            services.AddSingleton<IEmployeeDAL, EmployeeDAL>();
+            services.AddAutoMapper(typeof(ProductManager));
+            services.AddScoped<IEmployeeRepository, DataBaseEmployeeRepository>();
+            services.AddScoped<IProductRepository, DataBaseProductRepository>();
+            services.AddScoped<ICustomerRepository, MockCustomerRepository>();
+            services.AddScoped<IEmployeeManager,EmployeeManager>();
+            services.AddScoped<IEmployeeDAL, EmployeeDAL>();
+            services.AddScoped<IProductDAL, ProductDAL>();
+            services.AddScoped<IProductManager, ProductManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

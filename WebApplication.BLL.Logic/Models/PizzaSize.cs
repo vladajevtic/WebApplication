@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SEDCWebApplication12.Models
 {
-    public enum Size
+    public enum PizzaSize
     {
         [Display(Name ="small")]
         Small,
