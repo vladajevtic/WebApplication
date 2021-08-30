@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using SEDCWebApplication12.Models;
 using SEDCWebApplication12.Models.Repository.Interfaces;
 using SEDCWebApplication12.ViewModels;
@@ -6,6 +7,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.IO;
+using SEDCWebApplication.BLL.Logic.Models;
+using WebApplication.BLL.Logic.Models;
 
 namespace SEDCWebApplication12.Controllers
 {
@@ -13,15 +17,17 @@ namespace SEDCWebApplication12.Controllers
     public class CustomerController : Controller
     {
         private ICustomerRepository _customerRepository;
-        public CustomerController(ICustomerRepository customerRepository)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public CustomerController(ICustomerRepository customerRepository, IWebHostEnvironment webHostEnvironment)
         {
             _customerRepository = customerRepository;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [Route("CustomerList")]
         public IActionResult CustomerList()
         {
-            List<Customer> customers = _customerRepository.GetAllCustomers().ToList();
+            List<CustomerDTO> customers = _customerRepository.GetAllCustomers().ToList();
             
             ViewBag.Title = "Customers";
 
@@ -30,7 +36,7 @@ namespace SEDCWebApplication12.Controllers
         [Route("CustomerDetails/{id}")]
         public IActionResult CustomerDetails(int id)
         {
-            Customer customers = _customerRepository.GetCustomerById(id);
+            CustomerDTO customers = _customerRepository.GetCustomerById(id);
 
             CustomerDetailsViewModel customersVM = new CustomerDetailsViewModel
             {
@@ -48,11 +54,11 @@ namespace SEDCWebApplication12.Controllers
         }
 
         [HttpPost]
-        public IActionResult CustomerCreate(Customer customer)
+        public IActionResult CustomerCreate(CustomerDTO customer)
         {
             if (ModelState.IsValid)
             {
-                Customer newCustomer = _customerRepository.Add(customer);
+                CustomerDTO newCustomer = _customerRepository.Add(customer);
                 return RedirectToAction("CustomerDetails", new { id = newCustomer.Id });
             }
 

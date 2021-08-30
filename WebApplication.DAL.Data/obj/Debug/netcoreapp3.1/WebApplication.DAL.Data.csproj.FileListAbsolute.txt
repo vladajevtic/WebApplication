@@ -7,4 +7,3 @@ C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\bin\Debug\net
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
-C:\Users\vlada\Source\Repos\WebApplication\WebApplication.DAL.Data\obj\Debug\netcoreapp3.1\WebApplication.DAL.Data.csproj.AssemblyReference.cache

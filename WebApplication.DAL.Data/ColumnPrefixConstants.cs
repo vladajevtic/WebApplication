@@ -8,6 +8,7 @@ namespace WebApplication.DAL.Data
     {
         public const string EMP = "emp";
         public const string PROD = "prod";
+        public const string CUS = "cus";
 
     }
 }

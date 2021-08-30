@@ -88,11 +88,11 @@ namespace WebApplication.DAL.Data.Implementations
         {
             Product item = new Product(ReaderColumnReadNullableValueType<Int32>(reader, "ID", COLUMN_PREFIX));
 
-            item.Name = ReaderColumnReadObject<string>(reader, "ProductName", COLUMN_PREFIX);
+            item.Name = ReaderColumnReadObject<string>(reader, "Name", COLUMN_PREFIX);
             item.Price = ReaderColumnReadValueType<decimal>(reader, "UnitPrice", COLUMN_PREFIX);
             item.IsDiscounted = ReaderColumnReadValueType<bool>(reader, "IsDiscounted", COLUMN_PREFIX);
             item.IsActive = ReaderColumnReadValueType<bool>(reader, "IsActive", COLUMN_PREFIX);
-            item.IsDeleted = ReaderColumnReadValueType<bool>(reader, "IsDeleted", COLUMN_PREFIX);
+            //item.IsDeleted = ReaderColumnReadValueType<bool>(reader, "IsDeleted", COLUMN_PREFIX);
 
             return item;
         }
