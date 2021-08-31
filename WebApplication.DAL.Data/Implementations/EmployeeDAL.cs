@@ -213,7 +213,7 @@ namespace WebApplication.DAL.Data.Implementations
             this.ParamStringNullableValueSet(cmd, item.UserName, "@UserName", SqlDbType.NVarChar, 50);
             this.ParamStringNullableValueSet(cmd, item.Password, "@Password", SqlDbType.NVarChar, 50);
             this.ParamStringNonNullableValueSet(cmd, item.Name, "@EmployeeName", SqlDbType.NVarChar, 50);
-            this.ParamStringNonNullableValueSet(cmd, item.Gender, "@Gender", SqlDbType.NVarChar, 50);
+            this.ParamStringNullableValueSet(cmd, item.Gender, "@Gender", SqlDbType.NVarChar, 50);
             this.ParamValueTypeNonNullableValueSet(cmd, item.RoleId, "@RoleId", SqlDbType.Int);
             this.ParamValueTypeNonNullableValueSet(cmd, item.DateOfBirth, "@DateOfBirth", SqlDbType.Date);
         }

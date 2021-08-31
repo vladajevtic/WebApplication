@@ -11,8 +11,7 @@ namespace SEDCWebApplication12.ViewModels
     public class EmployeeCreateViewModel
     {
         [Required(ErrorMessage = "Ime je obavezno")]
-        [RegularExpression(@"^(([A-za-z]+[\s]{1}[A-za-z]+)|([A-Za-z]+))$",
-           ErrorMessage = "Please enter a valid Name")]
+        
         public string Name { get; set; }
 
         [Required(ErrorMessage = "Email id is required")]
@@ -20,6 +19,8 @@ namespace SEDCWebApplication12.ViewModels
                             ErrorMessage = "Please enter a valid email address")]
         public string Email { get; set; }
         public RoleEnum Role { get; set; }
+
+        public string Gender { get; set; }
 
         public IFormFile Photo { get; set; }
     }

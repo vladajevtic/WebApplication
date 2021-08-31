@@ -92,7 +92,7 @@ namespace WebApplication.DAL.Data.Implementations
             item.Price = ReaderColumnReadValueType<decimal>(reader, "UnitPrice", COLUMN_PREFIX);
             item.IsDiscounted = ReaderColumnReadValueType<bool>(reader, "IsDiscounted", COLUMN_PREFIX);
             item.IsActive = ReaderColumnReadValueType<bool>(reader, "IsActive", COLUMN_PREFIX);
-            //item.IsDeleted = ReaderColumnReadValueType<bool>(reader, "IsDeleted", COLUMN_PREFIX);
+            item.IsDeleted = ReaderColumnReadValueType<bool>(reader, "IsDeleted", COLUMN_PREFIX);
 
             return item;
         }

@@ -13,7 +13,8 @@ namespace WebApplication.BLL.Logic
         {
             CreateMap<Employee, EmployeeDTO>();
             CreateMap<EmployeeDTO, Employee>()
-                .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email));
+                .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email))
+                .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));
             CreateMap<Product, ProductDTO>();
             CreateMap<Customer, CustomerDTO>();
             CreateMap<CustomerDTO, Customer>()

@@ -23,12 +23,13 @@ namespace WebApplication.BLL.Logic.Implementations
         {
             Employee employeeEntity = _mapper.Map<Employee>(employee);
             _employeeDAL.Save(employeeEntity);
+             employee = _mapper.Map<EmployeeDTO>(employeeEntity);
             return employee;
         }
 
         public IEnumerable<EmployeeDTO> GetAllEmployees()
         {
-            return _mapper.Map<List<EmployeeDTO>>(_employeeDAL.GetAll(0, 5));
+            return _mapper.Map<List<EmployeeDTO>>(_employeeDAL.GetAll(0, 50));
         }
 
         public EmployeeDTO GetEmployeeById(int id)

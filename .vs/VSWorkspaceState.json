@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\SEDCWebApplication12",
+    "\\SEDCWebApplication12\\Views",
+    "\\SEDCWebApplication12\\Views\\Customer",
     "\\WebApplication.DAL.Data"
   ],
-  "SelectedNode": "\\SEDCWebApplication12.sln",
+  "SelectedNode": "\\SEDCWebApplication12\\Views\\Customer\\CustomerCreate.cshtml",
   "PreviewInSolutionExplorer": false
 }

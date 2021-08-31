@@ -74,9 +74,11 @@ namespace SEDCWebApplication12.Controllers
                 }
                 EmployeeDTO employee = new EmployeeDTO
                 {
+                    Id = null,
                     Name = model.Name,
                     Email = model.Email,
                     Role = model.Role,
+                    Gender = model.Gender,
                     ImagePath = "../image/" + uniqueName
                 };
                 EmployeeDTO newEmployee = _employeeRepository.Add(employee);
