@@ -12,5 +12,7 @@ namespace WebApplication.DAL.Data.Interfaces
         Product GetById(int id);
 
         List<Product> GetAll(int skip, int take);
+
+        
     }
 }

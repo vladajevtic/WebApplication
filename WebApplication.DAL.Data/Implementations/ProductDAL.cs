@@ -88,7 +88,7 @@ namespace WebApplication.DAL.Data.Implementations
         {
             Product item = new Product(ReaderColumnReadNullableValueType<Int32>(reader, "ID", COLUMN_PREFIX));
 
-            item.Name = ReaderColumnReadObject<string>(reader, "Name", COLUMN_PREFIX);
+            item.Name = ReaderColumnReadObject<string>(reader, "ProductName", COLUMN_PREFIX);
             item.Price = ReaderColumnReadValueType<decimal>(reader, "UnitPrice", COLUMN_PREFIX);
             item.IsDiscounted = ReaderColumnReadValueType<bool>(reader, "IsDiscounted", COLUMN_PREFIX);
             item.IsActive = ReaderColumnReadValueType<bool>(reader, "IsActive", COLUMN_PREFIX);
@@ -152,11 +152,12 @@ namespace WebApplication.DAL.Data.Implementations
         private void CommonParametersAdd(Product item, SqlCommand cmd)
         {
 
-            this.ParamStringNonNullableValueSet(cmd, item.Name, "@ProductName", SqlDbType.NVarChar, 50);
+            this.ParamStringNonNullableValueSet(cmd, item.Name, "@Name", SqlDbType.NVarChar, 50);
             this.ParamValueTypeNonNullableValueSet(cmd, item.Price, "@UnitPrice", SqlDbType.Decimal);
-            this.ParamValueTypeNonNullableValueSet(cmd, item.IsDiscounted, "@IsDiscounted", SqlDbType.Bit);
+            this.ParamNullableValueTypeNullableValueSet(cmd, item.IsDiscounted, "@IsDiscounted", SqlDbType.Bit);
             this.ParamValueTypeNonNullableValueSet(cmd, item.IsActive, "@IsActive", SqlDbType.Bit);
             this.ParamValueTypeNonNullableValueSet(cmd, item.IsDeleted, "@IsDeleted", SqlDbType.Bit);
+            this.ParamStringNullableValueSet(cmd, item.Size, "@Size", SqlDbType.NVarChar, 50);
         }
 
         private void Update(Product item)

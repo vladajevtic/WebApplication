@@ -66,15 +66,15 @@ namespace SEDCWebApplication12.Controllers
 
         [Route("ProductEdit/{id}")]
         [HttpPost]
-        public IActionResult ProductEdit(ProductDTO product, int id)
+        public IActionResult ProductEdit(ProductDTO product)
         {
-            ProductDTO unique = _product.GetProductById(id);
+            ProductDTO unique = _product.Update(product);
             unique.Name = product.Name;
             unique.Price = product.Price;
-            unique.Description = product.Description;
-            unique.Picture = product.Picture;
-             
-            return RedirectToAction("ProductDetails", new { id = unique.Id });
+            //unique.Description = product.Description;
+            //unique.Picture = product.Picture;
+
+            return RedirectToAction("ProductDetails", new { unique.Id });
         }
     }
 }

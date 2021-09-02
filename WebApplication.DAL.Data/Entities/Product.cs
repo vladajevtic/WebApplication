@@ -16,10 +16,9 @@ namespace WebApplication.DAL.Data.Entities
 
         public string Name { get; set; }
         public decimal Price { get; set; }
-        public bool IsDiscounted { get; set; }
+        public bool? IsDiscounted { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-        public string Description { get; set; }
         public string Size { get; set; }
         
     }

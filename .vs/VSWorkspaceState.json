@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SEDCWebApplication12",
-    "\\SEDCWebApplication12\\Views",
-    "\\SEDCWebApplication12\\Views\\Customer",
-    "\\WebApplication.DAL.Data"
+    "\\WebApplication.BLL.Logic",
+    "\\WebApplication.BLL.Logic\\Implementations",
+    "\\WebApplication.DAL.Data",
+    "\\WebApplication.DAL.Data\\Implementations"
   ],
-  "SelectedNode": "\\SEDCWebApplication12\\Views\\Customer\\CustomerCreate.cshtml",
+  "SelectedNode": "\\WebApplication.BLL.Logic\\Implementations\\EmployeeManager.cs",
   "PreviewInSolutionExplorer": false
 }

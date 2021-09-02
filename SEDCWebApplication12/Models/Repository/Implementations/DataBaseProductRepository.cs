@@ -31,5 +31,10 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
             return _productManager.GetProductById(id);
 
         }
+
+        public ProductDTO Update(ProductDTO product)
+        {
+            return _productManager.Update(product);
+        }
     }
 }

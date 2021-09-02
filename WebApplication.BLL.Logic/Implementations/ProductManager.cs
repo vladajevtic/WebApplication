@@ -23,17 +23,29 @@ namespace WebApplication.BLL.Logic.Implementations
         {
             Product productEntity = _mapper.Map<Product>(product);
             _productDAL.Save(productEntity);
+            product = _mapper.Map<ProductDTO>(productEntity);
+
             return product;
         }
 
         public IEnumerable<ProductDTO> GetAllProduct()
         {
-            return _mapper.Map<List<ProductDTO>>(_productDAL.GetAll(0, 5));
+            return _mapper.Map<List<ProductDTO>>(_productDAL.GetAll(0, 50));
         }
 
         public ProductDTO GetProductById(int id)
         {
             return _mapper.Map<ProductDTO>(_productDAL.GetById(id));
+        }
+
+        public ProductDTO Update(ProductDTO product)
+        {
+            Product productEntity = _mapper.Map<Product>(product);
+            _productDAL.Save(productEntity);
+            product = _mapper.Map<ProductDTO>(productEntity);
+
+            return product;
+
         }
     }
 }
