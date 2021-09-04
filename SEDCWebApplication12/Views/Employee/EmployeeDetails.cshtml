@@ -1,7 +1,8 @@
-﻿@model EmployeeDetailsViewModel
+﻿
+@model EmployeeDetailsViewModel
+@{
+    ViewData["DisplayBTN"] = false;
+}
 
-<h1>@Model.Employee.Name </h1>
-<div>
-    <img src ="@Model.Employee.ImagePath" />
-</div>
-<h3>@Model.Employee.Email</h3>
+
+<partial name="_EmployeePartialView" model="@Model.Employee" view-data="ViewData" />

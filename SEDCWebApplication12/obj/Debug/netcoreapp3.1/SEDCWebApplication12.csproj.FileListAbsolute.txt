@@ -115,3 +115,4 @@ C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcor
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\SEDCWebApplication12.dll
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\SEDCWebApplication12.pdb
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\SEDCWebApplication12.genruntimeconfig.cache
+C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_EmployeePartialView.cshtml.g.cs

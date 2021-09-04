@@ -1,0 +1,17 @@
+﻿@model EmployeeDTO
+@{
+    var detailsBTN = (bool)ViewData["DisplayBTN"];
+}
+
+<div class="card card-user">
+    <img class="card-img-top" src="@Model.ImagePath" alt="Card image" style="width:100%">
+    <div class="card-body">
+        <h4 class="card-title text-black-50">@Model.Name</h4>
+        <p class="card-text text-black-50">Some example text some example text. John Doe is an architect and engineer</p>
+        <p class="card-text text-black-50">@Model.Email</p>
+        @if (detailsBTN)
+        {
+            <a asp-controller="employee" asp-action="EmployeeDetails" asp-route-id="@Model.Id">See Profile</a>
+        }
+    </div>
+</div>

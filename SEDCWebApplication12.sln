@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{EC0AB277-E3C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{680E9159-EAC5-4FA2-AE0F-B208A9364518}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.BLL.Logic", "WebApplication.BLL.Logic\WebApplication.BLL.Logic.csproj", "{7417434E-A931-4221-880C-AC9BC22C123F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.BLL.Logic", "WebApplication.BLL.Logic\WebApplication.BLL.Logic.csproj", "{7417434E-A931-4221-880C-AC9BC22C123F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.DAL.Data", "WebApplication.DAL.Data\WebApplication.DAL.Data.csproj", "{99813A4A-C7D0-4A65-89DB-4CB172A3C122}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.DAL.Data", "WebApplication.DAL.Data\WebApplication.DAL.Data.csproj", "{99813A4A-C7D0-4A65-89DB-4CB172A3C122}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
