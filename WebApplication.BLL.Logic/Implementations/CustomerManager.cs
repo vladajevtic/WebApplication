@@ -32,7 +32,19 @@ namespace WebApplication.BLL.Logic.Implementations
 
         public CustomerDTO GetCustomerById(int id)
         {
-            return _mapper.Map<CustomerDTO>(_customerDAL.GetById(id));
+            try
+            {
+                var customer = _customerDAL.GetById(id);
+                if(customer == null)
+                {
+                    throw new Exception($"Customer with {id} id not found");
+                }
+                return _mapper.Map<CustomerDTO>(customer);
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

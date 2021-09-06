@@ -35,7 +35,19 @@ namespace WebApplication.BLL.Logic.Implementations
 
         public ProductDTO GetProductById(int id)
         {
-            return _mapper.Map<ProductDTO>(_productDAL.GetById(id));
+            try
+            {
+                Product product = _productDAL.GetById(id);
+                if(product == null)
+                {
+                    throw new Exception($"Product with {id} id not found");
+                }
+                return _mapper.Map<ProductDTO>(_productDAL.GetById(id));
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
 
         public ProductDTO Update(ProductDTO product)

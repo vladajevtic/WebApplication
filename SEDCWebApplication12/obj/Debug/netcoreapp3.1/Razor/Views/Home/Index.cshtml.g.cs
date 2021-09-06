@@ -40,8 +40,22 @@ using SEDCWebApplication.BLL.Logic.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\Views\_ViewImports.cshtml"
+using WebApplication.BLL.Logic.Models;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\Views\_ViewImports.cshtml"
+using SEDCWebApplication12.Views.Shared;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f6cc5033646d6812d4b8f99751da64a2b9839292", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"57641ed8e637ace151ae870b2f98e833e0b9eea8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4fcb1cfd437e708e9db70df043a303f1de9be4b1", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

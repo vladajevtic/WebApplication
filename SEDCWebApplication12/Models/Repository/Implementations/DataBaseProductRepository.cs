@@ -28,7 +28,14 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
 
         public ProductDTO GetProductById(int id)
         {
-            return _productManager.GetProductById(id);
+            try
+            {
+                return _productManager.GetProductById(id);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
         }
 

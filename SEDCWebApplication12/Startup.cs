@@ -51,7 +51,8 @@ namespace SEDCWebApplication12
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseExceptionHandler("/Error");
+                //app.UseDeveloperExceptionPage();
             }
             else
             {

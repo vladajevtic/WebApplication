@@ -34,7 +34,19 @@ namespace WebApplication.BLL.Logic.Implementations
 
         public EmployeeDTO GetEmployeeById(int id)
         {
-            return _mapper.Map<EmployeeDTO>(_employeeDAL.GetById(id));
+            try
+            {
+                Employee employee = _employeeDAL.GetById(id);
+                if(employee == null)
+                {
+                    throw new Exception($"Employee with {id} not found");
+                }
+                return _mapper.Map<EmployeeDTO>(_employeeDAL.GetById(id));
+            }
+            catch(Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -41,6 +41,13 @@ using SEDCWebApplication.BLL.Logic.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 6 "C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\Views\_ViewImports.cshtml"
+using SEDCWebApplication12.Views.Shared;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\Views\Product\ProductList.cshtml"
 using WebApplication.BLL.Logic.Models;
 
@@ -48,7 +55,7 @@ using WebApplication.BLL.Logic.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8e96b806c57e77e1cf54a8883d774bd1f3de1abc", @"/Views/Product/ProductList.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"57641ed8e637ace151ae870b2f98e833e0b9eea8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4fcb1cfd437e708e9db70df043a303f1de9be4b1", @"/Views/_ViewImports.cshtml")]
     public class Views_Product_ProductList : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<ProductDTO>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("bg-primary text-white"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -82,7 +89,7 @@ using WebApplication.BLL.Logic.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n\r\n<div class=\"container\">\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e96b806c57e77e1cf54a8883d774bd1f3de1abc5798", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e96b806c57e77e1cf54a8883d774bd1f3de1abc6010", async() => {
                 WriteLiteral("Add Product");
             }
             );
@@ -120,7 +127,7 @@ using WebApplication.BLL.Logic.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</h4>\r\n                    <p class=\"card-text\">Some example text some example text. John Doe is an architect and engineer</p>\r\n                    <div class=\"row justify-content-around\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e96b806c57e77e1cf54a8883d774bd1f3de1abc8229", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e96b806c57e77e1cf54a8883d774bd1f3de1abc8441", async() => {
                 WriteLiteral("See Profile");
             }
             );
@@ -154,7 +161,7 @@ using WebApplication.BLL.Logic.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e96b806c57e77e1cf54a8883d774bd1f3de1abc10786", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8e96b806c57e77e1cf54a8883d774bd1f3de1abc10998", async() => {
                 WriteLiteral("Edit");
             }
             );

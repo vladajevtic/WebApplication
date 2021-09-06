@@ -28,7 +28,15 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
 
         public CustomerDTO GetCustomerById(int id)
         {
-            return _customerManager.GetCustomerById(id);
+            try
+            {
+                return _customerManager.GetCustomerById(id);
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }

@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\SEDCWebApplication12",
-    "\\SEDCWebApplication12\\Controllers"
+    "\\SEDCWebApplication12\\Controllers",
+    "\\SEDCWebApplication12\\Views",
+    "\\SEDCWebApplication12\\Views\\Employee"
   ],
-  "SelectedNode": "\\SEDCWebApplication12.sln",
+  "SelectedNode": "\\SEDCWebApplication12\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

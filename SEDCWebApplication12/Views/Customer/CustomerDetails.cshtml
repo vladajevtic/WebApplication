@@ -1,6 +1,8 @@
-﻿@model SEDCWebApplication12.ViewModels.CustomerDetailsViewModel
+﻿@page "{id}" 
+@model CustomerDetailsViewModel
+@{
+    ViewData["DisplayBTN"] = false;
+}
 
-<h1>@Model.PageTitle</h1>
-<p>@Model.Customer.Name</p>
-<img  src="~/image/avatar.png"/>
-<p>@Model.Customer.Email</p>
+
+<partial name="_CustomerPartialView" model="@Model.Customer" view-data="ViewData" />
