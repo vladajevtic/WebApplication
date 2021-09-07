@@ -12,5 +12,6 @@ namespace WebApplication.BLL.Logic.Interfaces
         ProductDTO Add(ProductDTO product);
 
         ProductDTO Update(ProductDTO product);
+        ProductDTO Delete(ProductDTO product);
     }
 }

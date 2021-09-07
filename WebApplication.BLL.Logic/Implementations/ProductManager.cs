@@ -28,6 +28,13 @@ namespace WebApplication.BLL.Logic.Implementations
             return product;
         }
 
+        public ProductDTO Delete(ProductDTO product)
+        {
+            Product product1 = _mapper.Map<Product>(product);
+            _productDAL.Save(product1);
+            return product;
+        }
+
         public IEnumerable<ProductDTO> GetAllProduct()
         {
             return _mapper.Map<List<ProductDTO>>(_productDAL.GetAll(0, 50));
@@ -59,5 +66,14 @@ namespace WebApplication.BLL.Logic.Implementations
             return product;
 
         }
+        //public ProductDTO Delete(ProductDTO product)
+        //{
+        //    Product productEntity = _mapper.Map<Product>(product);
+        //    _productDAL.Delete
+        //    product = _mapper.Map<ProductDTO>(productEntity);
+
+        //    return product;
+
+        //}
     }
 }

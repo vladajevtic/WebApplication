@@ -36,8 +36,10 @@ namespace WebAPI.Controllers
 
         // POST api/<ProductController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] ProductDTO product)
         {
+            _product.AddProduct(product);
+
         }
 
         // PUT api/<ProductController>/5
@@ -48,8 +50,10 @@ namespace WebAPI.Controllers
 
         // DELETE api/<ProductController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public bool Delete(int id)
         {
+            var product = _product.GetProductById(id);
+            return product.IsDeleted;
         }
     }
 }

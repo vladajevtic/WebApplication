@@ -4,8 +4,9 @@
     "\\SEDCWebApplication12",
     "\\SEDCWebApplication12\\Controllers",
     "\\SEDCWebApplication12\\Views",
-    "\\SEDCWebApplication12\\Views\\Employee"
+    "\\SEDCWebApplication12\\Views\\Employee",
+    "\\WebAPI"
   ],
-  "SelectedNode": "\\SEDCWebApplication12\\Startup.cs",
+  "SelectedNode": "\\WebAPI\\Startup.cs",
   "PreviewInSolutionExplorer": false
 }

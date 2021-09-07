@@ -107,6 +107,9 @@ namespace WebApplication.DAL.Data.Implementations
                 case EntityStateEnum.Updated:
                     this.Update(item);
                     break;
+                case EntityStateEnum.Deleted:
+                    this.Delete(item);
+                    break;
                 case EntityStateEnum.Loaded:
                     break;
                 default:
@@ -166,6 +169,37 @@ namespace WebApplication.DAL.Data.Implementations
 
             SqlCommand cmd = CommandGet(cn);
             cmd.CommandText = "Product_Upd";
+
+            CommonParametersAdd(item, cmd);
+
+            SqlParameter prm = new SqlParameter();
+            prm.ParameterName = "@ID";
+            prm.SqlDbType = SqlDbType.Int;
+            prm.Value = item.Id.Value;
+            cmd.Parameters.Add(prm);
+
+            try
+            {
+                cn.Open();
+
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                //DMLogger.Singleton.LogError(ex, item);
+                throw;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
+        private void Delete(Product item)
+        {
+            SqlConnection cn = ConnectionGet();
+
+            SqlCommand cmd = CommandGet(cn);
+            cmd.CommandText = "Product_Del";
 
             CommonParametersAdd(item, cmd);
 
