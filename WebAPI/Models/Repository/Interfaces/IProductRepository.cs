@@ -16,5 +16,8 @@ namespace SEDCWebApplication12.Models.Repository.Interfaces
 
         ProductDTO Update(ProductDTO product);
 
+        ProductDTO Delete(ProductDTO product);
+
+
     }
 }

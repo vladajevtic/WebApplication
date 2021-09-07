@@ -52,8 +52,9 @@ namespace WebAPI.Controllers
         [HttpDelete("{id}")]
         public bool Delete(int id)
         {
-            var product = _product.GetProductById(id);
-            return product.IsDeleted;
+            var productDel = _product.GetProductById(id);
+            _product.Delete(productDel);
+            return productDel.IsDeleted;
         }
     }
 }

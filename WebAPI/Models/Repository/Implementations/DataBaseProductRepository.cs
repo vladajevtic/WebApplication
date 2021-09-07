@@ -21,6 +21,12 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
             return _productManager.Add(product);
         }
 
+        public ProductDTO Delete(ProductDTO product)
+        {
+            return _productManager.Delete(product);
+
+        }
+
         public IEnumerable<ProductDTO> GetAllProduct()
         {
             return _productManager.GetAllProduct();
