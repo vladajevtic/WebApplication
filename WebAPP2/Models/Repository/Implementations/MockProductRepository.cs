@@ -15,11 +15,11 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
         {
             _productList = new List<ProductDTO>
             {
-                new ProductDTO
+                 new ProductDTO
                 {
                     Id = 1,
                     Name = "PICA1",
-                    Size = PizzaSize.Medium,
+                    Size = "Medium",
                     Price = 123,
                     IsDiscounted = false,
                     IsActive = true,
@@ -31,7 +31,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id = 2,
                     Name = "PICA2",
-                    Size = PizzaSize.Medium,
+                    Size = "Medium",
                     Price = 456,
                     IsDiscounted = false,
                     IsActive = true,
@@ -43,7 +43,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id = 3,
                     Name = "PICA3",
-                    Size = PizzaSize.Small,
+                    Size = "Medium",
                     Price = 789,
                     IsDiscounted = false,
                     IsActive = true,
@@ -55,7 +55,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id = 4,
                     Name = "PICA4",
-                    Size = PizzaSize.Small,
+                    Size = "Small",
                     Price = 123,
                     IsDiscounted = false,
                     IsActive = true,
@@ -67,7 +67,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id = 5,
                     Name = "PICA5",
-                    Size = PizzaSize.Medium,
+                    Size = "Small",
                     Price = 456,
                     IsDiscounted = false,
                     IsActive = true,
@@ -79,7 +79,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                 {
                     Id = 6,
                     Name = "PICA6",
-                    Size = PizzaSize.Large,
+                    Size = "Large",
                     Price = 789,
                     IsDiscounted = false,
                     IsActive = true,

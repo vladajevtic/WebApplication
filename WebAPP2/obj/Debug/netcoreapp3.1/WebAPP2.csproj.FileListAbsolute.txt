@@ -1,3 +1,10 @@
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.csproj.AssemblyReference.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.AssemblyInfoInputs.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.AssemblyInfo.cs
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.csproj.CoreCompileInputs.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\SEDCWebApplication12.Views.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\SEDCWebApplication12.Views.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\SEDCWebApplication12.deps.json
@@ -36,13 +43,6 @@ C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\WebAp
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\SEDCWebApplication12.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\WebApplication.BLL.Logic.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.csproj.AssemblyReference.cache
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.AssemblyInfoInputs.cache
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.AssemblyInfo.cs
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.csproj.CoreCompileInputs.cache
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\staticwebassets\WebAPP2.StaticWebAssets.Manifest.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\staticwebassets\WebAPP2.StaticWebAssets.xml
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\scopedcss\bundle\WebAPP2.styles.css

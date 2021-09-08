@@ -7,7 +7,7 @@ using WebApplication.DAL.Data.Entities;
 
 namespace WebApplication.DAL.Data.Entities
 {
-    public class Product : ProductsBase
+    public class Product : BaseEntity
     {
         public Product(int? id)
                : base(id)

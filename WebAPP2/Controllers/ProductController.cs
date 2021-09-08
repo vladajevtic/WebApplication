@@ -6,9 +6,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Models;
 
+
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace WebAPI.Controllers
+namespace WebAPP2.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -38,8 +39,7 @@ namespace WebAPI.Controllers
         [HttpPost]
         public void Post([FromBody] ProductDTO product)
         {
-            _product.AddProduct(product);
-
+             _product.AddProduct(product);
         }
 
         // PUT api/<ProductController>/5

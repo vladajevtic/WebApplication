@@ -91,6 +91,7 @@ namespace WebApplication.DAL.Data.Implementations
             item.IsDiscounted = ReaderColumnReadValueType<bool>(reader, "IsDiscounted", COLUMN_PREFIX);
             item.IsActive = ReaderColumnReadValueType<bool>(reader, "IsActive", COLUMN_PREFIX);
             item.IsDeleted = ReaderColumnReadValueType<bool>(reader, "IsDeleted", COLUMN_PREFIX);
+            item.Size = ReaderColumnReadObject<string>(reader, "Size", COLUMN_PREFIX);
 
             return item;
         }

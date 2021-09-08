@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
 
+
+
 namespace SEDCWebApplication12.Models.Repository.Implementations
 {
     public class DataBaseProductRepository : IProductRepository

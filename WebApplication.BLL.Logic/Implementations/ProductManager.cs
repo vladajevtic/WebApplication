@@ -22,6 +22,7 @@ namespace WebApplication.BLL.Logic.Implementations
         public ProductDTO Add(ProductDTO product)
         {
             Product productEntity = _mapper.Map<Product>(product);
+            productEntity.EntityState = (EntityStateEnum)1;
             _productDAL.Save(productEntity);
             product = _mapper.Map<ProductDTO>(productEntity);
 
