@@ -16,7 +16,6 @@ namespace WebApplication.BLL.Logic.Models
         public bool? IsDiscounted { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-        //public string Picture { get; set; }
         public PizzaSize Size { get; set; }
 
     }

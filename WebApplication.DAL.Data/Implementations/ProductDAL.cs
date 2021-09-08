@@ -16,8 +16,6 @@ namespace WebApplication.DAL.Data.Implementations
         }
         public List<Product> GetAll(int skip, int take)
         {
-
-
             SqlConnection cn = ConnectionGet();
 
             Product result = null;

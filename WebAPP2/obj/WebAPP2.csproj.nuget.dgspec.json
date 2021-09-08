@@ -1,0 +1,283 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebAPP2\\WebAPP2.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
+        "projectName": "SEDCWebApplication12",
+        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
+                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebAPP2\\WebAPP2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebAPP2\\WebAPP2.csproj",
+        "projectName": "WebAPP2",
+        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebAPP2\\WebAPP2.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebAPP2\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj": {
+                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj"
+              },
+              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
+                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
+        "projectName": "WebApplication.BLL.Logic",
+        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
+                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+        "projectName": "WebApplication.DAL.Data",
+        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+        "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -17,8 +17,9 @@ using WebApplication.BLL.Logic.Implementations;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.DAL.Data.Implementations;
 using WebApplication.DAL.Data.Interfaces;
-using SEDCWebAPI.Models.Repository.Implementations;
 using DataBaseCustomerRepository = SEDCWebAPI.Models.Repository.Implementations.DataBaseCustomerRepository;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 
 namespace WebAPI
 {
@@ -37,7 +38,7 @@ namespace WebAPI
             services.AddControllers();
             services.AddAutoMapper(typeof(ProductManager));
             services.AddAutoMapper(typeof(EmployeeManager));
-            
+
             services.AddAutoMapper(typeof(CustomerManager));
             services.AddScoped<IEmployeeRepository, DataBaseEmployeeRepository>();
             services.AddScoped<IProductRepository, DataBaseProductRepository>();
@@ -48,10 +49,24 @@ namespace WebAPI
             services.AddScoped<ICustomerManager, CustomerManager>();
             services.AddScoped<IProductDAL, ProductDAL>();
             services.AddScoped<IProductManager, ProductManager>();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+                .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+                 {
+                     options.LoginPath = new PathString("/api/employee");
+                     options.AccessDeniedPath = new PathString("/auth/demied");
+                 });
         }
+        //services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+        //    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme,
+        //    options =>
+        //    {
+        //    options.LoginPath = new PathString("/api/employee");
+        //    options.AccessDeniedPath = new PathString("/auth/denied");
+        //});
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        //    }
+    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -71,3 +86,4 @@ namespace WebAPI
         }
     }
 }
+

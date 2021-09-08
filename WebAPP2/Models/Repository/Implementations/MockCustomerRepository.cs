@@ -1,0 +1,60 @@
+﻿using SEDCWebApplication12.Models.Repository.Interfaces;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using WebApplication.BLL.Logic.Models;
+
+namespace SEDCWebApplication12.Models.Repository.Implementations
+{
+    public class MockCustomerRepository : ICustomerRepository
+    {
+        private List<CustomerDTO> _customerList;
+        public MockCustomerRepository()
+        {
+            _customerList = new List<CustomerDTO>
+            {
+                new CustomerDTO
+                {
+                    Id = 1,
+                    Name = "Pera",
+                    ContactId = 1,
+                    Email = "nest@gmail.com",
+                    ImagePath = "../image/avatar.png"
+                },
+                new CustomerDTO
+                {
+                    Id = 2,
+                    Name = "Mika",
+                    ContactId = 2,
+                    Email = "nest@gmail.com",
+                    ImagePath = "../image/avatar.png"
+                },
+                new CustomerDTO
+                {
+                    Id = 3,
+                    Name = "Zika",
+                    ContactId = 3,
+                    Email = "nest@gmail.com",
+                    ImagePath = "../image/avatar.png"
+                }
+            };
+        }
+
+        public IEnumerable<CustomerDTO> GetAllCustomers()
+        {
+            return _customerList;
+        }
+
+        public CustomerDTO GetCustomerById(int id)
+        {
+            return _customerList.Where(x => x.Id == id).FirstOrDefault();
+        }
+        public CustomerDTO Add(CustomerDTO customer)
+        {
+            customer.Id = _customerList.Max(e => e.Id) + 1;
+            _customerList.Add(customer);
+            return _customerList.Where(x => x.Id == customer.Id).FirstOrDefault();
+        }
+    }
+}

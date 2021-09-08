@@ -1,12 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SEDCWebApplication12",
-    "\\SEDCWebApplication12\\Controllers",
-    "\\SEDCWebApplication12\\Views",
-    "\\SEDCWebApplication12\\Views\\Employee",
-    "\\WebAPI"
+    "\\WebAPI",
+    "\\WebAPI\\Controllers",
+    "\\WebAPP2",
+    "\\WebAPP2\\Controllers"
   ],
-  "SelectedNode": "\\WebAPI\\Startup.cs",
+  "SelectedNode": "\\WebAPP2\\Controllers\\ProductController.cs",
   "PreviewInSolutionExplorer": false
 }

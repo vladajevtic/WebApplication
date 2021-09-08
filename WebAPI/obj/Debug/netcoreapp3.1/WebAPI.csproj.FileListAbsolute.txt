@@ -1,5 +1,12 @@
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.Views.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.Views.pdb
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.deps.json
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.runtimeconfig.json
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.runtimeconfig.dev.json
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.exe
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.StaticWebAssets.xml
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.exe
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.deps.json
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.runtimeconfig.json
@@ -23,8 +30,10 @@ C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\runtim
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebApplication.BLL.Logic.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebApplication.BLL.Logic.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.AssemblyReference.cache
@@ -32,6 +41,7 @@ C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfoInputs.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.AssemblyInfo.cs
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.csproj.CoreCompileInputs.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.StaticWebAssets.Manifest.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\staticwebassets\WebAPI.StaticWebAssets.xml
@@ -41,13 +51,3 @@ C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.genruntimeconfig.cache
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\obj\Debug\netcoreapp3.1\WebAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.Views.dll
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.Views.pdb
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.deps.json
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.runtimeconfig.json
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.runtimeconfig.dev.json
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.exe
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\WebAPI.StaticWebAssets.xml
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.dll
-C:\Users\vlada\Source\Repos\WebApplication\WebAPI\bin\Debug\netcoreapp3.1\SEDCWebApplication12.pdb
