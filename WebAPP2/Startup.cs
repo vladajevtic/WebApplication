@@ -14,8 +14,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Implementations;
 using WebApplication.BLL.Logic.Interfaces;
-using WebApplication.DAL.Data.Implementations;
-using WebApplication.DAL.Data.Interfaces;
+//using WebApplication.DAL.Data.Implementations;
+//using WebApplication.DAL.Data.Interfaces;
+using WebApplicationEntityFramework.Implementation;
+using WebApplicationEntityFramework.Interfaces;
 using SEDCWebAPI.Models.Repository.Implementations;
 
 namespace WebAPP2
@@ -42,10 +44,10 @@ namespace WebAPP2
             services.AddScoped<IProductRepository, DataBaseProductRepository>();
             services.AddScoped<ICustomerRepository, SEDCWebAPI.Models.Repository.Implementations.DataBaseCustomerRepository>();
             services.AddScoped<IEmployeeManager, EmployeeManager>();
-            services.AddScoped<IEmployeeDAL, EmployeeDAL>();
-            services.AddScoped<ICustomerDAL, CustomerDAL>();
+            services.AddScoped<IEmployeeDAL, EmployeeRepository>();
+            services.AddScoped<ICustomerDAL, CustomerRepository>();
             services.AddScoped<ICustomerManager, CustomerManager>();
-            services.AddScoped<IProductDAL, ProductDAL>();
+            services.AddScoped<IProductDAL, ProductRepository>();
             services.AddScoped<IProductManager, ProductManager>();
         }
 

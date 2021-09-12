@@ -2,7 +2,9 @@ C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\ne
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\WebApplication.BLL.Logic.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\WebApplication.BLL.Logic.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\WebApplicationEntityFramework.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\WebApplication.DAL.Data.pdb
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\bin\Debug\netcoreapp3.1\WebApplicationEntityFramework.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.csproj.AssemblyReference.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.AssemblyInfoInputs.cache

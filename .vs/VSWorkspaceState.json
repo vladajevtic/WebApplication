@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebAPI",
-    "\\WebAPI\\Controllers",
     "\\WebAPP2",
-    "\\WebAPP2\\Controllers"
+    "\\WebAPP2\\Controllers",
+    "\\WebApplicationEntityFramework",
+    "\\WebApplicationEntityFramework\\Entities"
   ],
-  "SelectedNode": "\\WebAPP2\\Controllers\\ProductController.cs",
+  "SelectedNode": "\\WebApplicationEntityFramework\\Entities\\PizzaShopFinalContext.cs",
   "PreviewInSolutionExplorer": false
 }

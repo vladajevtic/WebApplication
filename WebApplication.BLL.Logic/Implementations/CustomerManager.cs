@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using System.Text;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
-using WebApplication.DAL.Data.Interfaces;
+//using WebApplication.DAL.Data.Interfaces;
+using WebApplicationEntityFramework.Interfaces;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
@@ -21,7 +22,7 @@ namespace WebApplication.BLL.Logic.Implementations
         public CustomerDTO Add(CustomerDTO customer)
         {
             Customer customerEntity = _mapper.Map<Customer>(customer);
-            _customerDAL.Save(customerEntity);
+            //_customerDAL.Save(customerEntity);
             return customer;
         }
 

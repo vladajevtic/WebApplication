@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
-using WebApplication.DAL.Data.Entities;
-using WebApplication.DAL.Data.Interfaces;
+using WebApplicationEntityFramework.Entities;
+//using WebApplication.DAL.Data.Entities;
+//using WebApplication.DAL.Data.Interfaces;
+using WebApplicationEntityFramework.Interfaces;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
@@ -22,7 +24,7 @@ namespace WebApplication.BLL.Logic.Implementations
         public ProductDTO Add(ProductDTO product)
         {
             Product productEntity = _mapper.Map<Product>(product);
-            productEntity.EntityState = (EntityStateEnum)1;
+            //productEntity.EntityState = (EntityStateEnum)1;
             _productDAL.Save(productEntity);
             product = _mapper.Map<ProductDTO>(productEntity);
 
@@ -39,7 +41,7 @@ namespace WebApplication.BLL.Logic.Implementations
             else
             {
                 var delete = 3;
-                product1.EntityState = (EntityStateEnum)delete;
+                //product1.EntityState = (EntityStateEnum)delete;
                 _productDAL.Save(product1);
 
                 return _mapper.Map<ProductDTO>(product1);

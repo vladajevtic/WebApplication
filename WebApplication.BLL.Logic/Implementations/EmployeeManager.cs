@@ -4,8 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using WebApplication.BLL.Logic.Interfaces;
-using WebApplication.DAL.Data.Entities;
-using WebApplication.DAL.Data.Interfaces;
+using WebApplicationEntityFramework.Entities;
+//using WebApplication.DAL.Data.Entities;
+//using WebApplication.DAL.Data.Interfaces;
+
+using WebApplicationEntityFramework.Interfaces;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
