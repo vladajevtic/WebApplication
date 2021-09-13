@@ -34,8 +34,9 @@ namespace WebAPP2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
-            services.AddControllers();
+            
+            services.AddControllers()
+                .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddAutoMapper(typeof(ProductManager));
             services.AddAutoMapper(typeof(EmployeeManager));
 
@@ -49,6 +50,8 @@ namespace WebAPP2
             services.AddScoped<ICustomerManager, CustomerManager>();
             services.AddScoped<IProductDAL, ProductRepository>();
             services.AddScoped<IProductManager, ProductManager>();
+            services.AddScoped<IOrderDAL, OrderRepository>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

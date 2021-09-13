@@ -27,7 +27,11 @@ namespace WebApplicationEntityFramework.Implementation
 
         public void Save(Product item)
         {
-            throw new NotImplementedException();
+            using (var db = new PizzaShopFinalContext())
+            {
+                db.Products.Add(item);
+                db.SaveChanges();
+            }
         }
     }
 }

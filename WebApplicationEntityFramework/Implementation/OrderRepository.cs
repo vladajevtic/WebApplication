@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,31 +8,36 @@ using WebApplicationEntityFramework.Interfaces;
 
 namespace WebApplicationEntityFramework.Implementation
 {
-    public class EmployeeRepository : IEmployeeDAL
+    public class OrderRepository : IOrderDAL
     {
-        public List<Employee> GetAll(int skip, int take)
+        public List<Order> GetAll(int skip, int take)
         {
             using(var db = new PizzaShopFinalContext())
             {
-                return db.Employees.ToList();
+                return db.Orders.ToList();
             }
         }
 
-        public Employee GetById(int id)
+        public List<Order> GetByEmployeeId(int id)
         {
             using (var db = new PizzaShopFinalContext())
             {
-                return db.Employees.First(x => x.EmployeeId == id);
+                List<Order> orders = db.Orders.Include(o => o.Customer).Where(x => x.EmployeeId == id).ToList();
+                return orders;
             }
+            
         }
 
-        public void Save(Employee item)
+        public Order GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Save(Order item)
         {
             using (var db = new PizzaShopFinalContext())
             {
-                User user = new User();
-                user.Employee = item;
-                db.Users.Add(user);
+                db.Orders.Add(item);
                 db.SaveChanges();
             }
         }

@@ -4,8 +4,9 @@
     "\\WebAPP2",
     "\\WebAPP2\\Controllers",
     "\\WebApplicationEntityFramework",
-    "\\WebApplicationEntityFramework\\Entities"
+    "\\WebApplicationEntityFramework\\Entities",
+    "\\WebApplicationEntityFramework\\Implementation"
   ],
-  "SelectedNode": "\\WebApplicationEntityFramework\\Entities\\PizzaShopFinalContext.cs",
+  "SelectedNode": "\\WebApplicationEntityFramework\\Implementation\\EmployeeRepository.cs",
   "PreviewInSolutionExplorer": false
 }

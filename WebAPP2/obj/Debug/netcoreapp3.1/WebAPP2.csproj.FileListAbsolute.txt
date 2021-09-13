@@ -93,3 +93,8 @@ C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAP
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.genruntimeconfig.cache
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll

@@ -16,13 +16,15 @@ namespace WebApplication.BLL.Logic
                 .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email))
                 .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));
             CreateMap<WebApplicationEntityFramework.Entities.Employee, EmployeeDTO>()
-                .ForMember(dest => dest.Name, src => src.MapFrom(src => src.EmployeeName))
+                .ForMember(dest => dest.Id, src => src.MapFrom(src => src.EmployeeId))
                 .ForMember(dest => dest.Role, src => src.MapFrom(src => src.RoleId))
-                .ForMember(dest => dest.Id, src => src.MapFrom(src => src.EmployeeId)); 
-            CreateMap<EmployeeDTO, WebApplicationEntityFramework.Entities.Employee>()
-                .ForMember(dest => dest.EmployeeName, src => src.MapFrom(src => src.Name))
-                .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role))
-                .ForMember(dest => dest.EmployeeId, src => src.MapFrom(src => src.Id)); ;
+                 .ForMember(dest => dest.Name, src => src.MapFrom(src => src.EmployeeName));
+
+            CreateMap<EmployeeDTO, WebApplicationEntityFramework.Entities.Employee >()
+                .ForMember(dest => dest.EmployeeName, src => src.MapFrom(src => src.Email))
+                    .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role))
+                        .ForMember(dest => dest.Role, src => src.Ignore());
+            
             CreateMap<Product, ProductDTO>();
             CreateMap<ProductDTO, Product>();
             CreateMap<WebApplicationEntityFramework.Entities.Product, ProductDTO>()

@@ -15,12 +15,13 @@ namespace WebApplication.BLL.Logic.Implementations
     public class EmployeeManager : IEmployeeManager
     {
         private readonly IEmployeeDAL _employeeDAL;
-
+        private readonly IOrderDAL _orderDAL;
         private readonly IMapper _mapper;
-        public EmployeeManager(IEmployeeDAL employeeDAL, IMapper mapper)
+        public EmployeeManager(IEmployeeDAL employeeDAL, IMapper mapper, IOrderDAL orderDAL)
         {
             _employeeDAL = employeeDAL;
             _mapper = mapper;
+            _orderDAL = orderDAL;
         }
         public EmployeeDTO Add(EmployeeDTO employee)
         {
@@ -44,7 +45,9 @@ namespace WebApplication.BLL.Logic.Implementations
                 {
                     throw new Exception($"Employee with {id} not found");
                 }
-                return _mapper.Map<EmployeeDTO>(_employeeDAL.GetById(id));
+                EmployeeDTO employeeDTO = _mapper.Map<EmployeeDTO>(_employeeDAL.GetById(id));
+                employeeDTO.Orders = _orderDAL.GetByEmployeeId(employee.EmployeeId);
+                return employeeDTO;
             }
             catch(Exception ex)
             {
