@@ -3,10 +3,12 @@
     "",
     "\\WebAPP2",
     "\\WebAPP2\\Controllers",
+    "\\WebApplication.BLL.Logic",
+    "\\WebApplication.CodeFirst",
     "\\WebApplicationEntityFramework",
     "\\WebApplicationEntityFramework\\Entities",
     "\\WebApplicationEntityFramework\\Implementation"
   ],
-  "SelectedNode": "\\WebApplicationEntityFramework\\Implementation\\EmployeeRepository.cs",
+  "SelectedNode": "\\SEDCWebApplication12.sln",
   "PreviewInSolutionExplorer": false
 }

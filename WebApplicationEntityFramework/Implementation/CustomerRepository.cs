@@ -29,7 +29,9 @@ namespace WebApplicationEntityFramework.Implementation
         {
             using (var db = new PizzaShopFinalContext())
             {
-                db.Customers.Add(item);
+                User user = new User();
+                user.Customer = item;
+                db.Users.Add(user);
                 db.SaveChanges();
             }
         }

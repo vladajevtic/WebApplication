@@ -10,11 +10,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SEDCWebApplication12\SEDCWebApplication12.csproj" />
     <ProjectReference Include="..\WebApplication.BLL.Logic\WebApplication.BLL.Logic.csproj" />
+    <ProjectReference Include="..\WebApplication.CodeFirst\WebApplication.CodeFirst.csproj" />
     <ProjectReference Include="..\WebApplicationEntityFramework\WebApplicationEntityFramework.csproj" />
   </ItemGroup>
 

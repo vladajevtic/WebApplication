@@ -98,3 +98,5 @@ C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Micro
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
+C:\Users\vlada\Source\Repos\WebApplication\WebAPP2\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb

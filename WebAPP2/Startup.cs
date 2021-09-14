@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Builder;
+using System.Reflection;
+using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +21,8 @@ using WebApplication.BLL.Logic.Interfaces;
 using WebApplicationEntityFramework.Implementation;
 using WebApplicationEntityFramework.Interfaces;
 using SEDCWebAPI.Models.Repository.Implementations;
+using WebApplication.CodeFirst;
+using Microsoft.EntityFrameworkCore;
 
 namespace WebAPP2
 {
@@ -37,9 +41,11 @@ namespace WebAPP2
             
             services.AddControllers()
                 .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SEDC2")));
+
             services.AddAutoMapper(typeof(ProductManager));
             services.AddAutoMapper(typeof(EmployeeManager));
-
             services.AddAutoMapper(typeof(CustomerManager));
             services.AddScoped<IEmployeeRepository, DataBaseEmployeeRepository>();
             services.AddScoped<IProductRepository, DataBaseProductRepository>();
@@ -52,6 +58,8 @@ namespace WebAPP2
             services.AddScoped<IProductManager, ProductManager>();
             services.AddScoped<IOrderDAL, OrderRepository>();
 
+          
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,6 +71,8 @@ namespace WebAPP2
             }
 
             app.UseHttpsRedirection();
+           
+
 
             app.UseRouting();
 
@@ -72,6 +82,7 @@ namespace WebAPP2
             {
                 endpoints.MapControllers();
             });
+           
         }
     }
 }

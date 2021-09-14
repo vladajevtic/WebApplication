@@ -35,6 +35,7 @@ namespace WebApplication.BLL.Logic
                 .ForMember(dest => dest.ProductName, src => src.MapFrom(src => src.Name))
                 .ForMember(dest => dest.UnitPrice, src => src.MapFrom(src => src.Price))
                 .ForMember(dest => dest.ProductId, src => src.MapFrom(src => src.Id));
+
             CreateMap<Customer, CustomerDTO>();
             CreateMap<CustomerDTO, Customer>()
                 .ForMember(dest => dest.UserName, src => src.MapFrom(src => src.Email));

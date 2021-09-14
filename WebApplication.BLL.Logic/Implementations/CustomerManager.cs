@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using SEDCWebApplication12.Models;
+//using SEDCWebApplication12.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,6 +7,7 @@ using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
 //using WebApplication.DAL.Data.Interfaces;
 using WebApplicationEntityFramework.Interfaces;
+using WebApplicationEntityFramework.Entities;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
@@ -14,15 +15,18 @@ namespace WebApplication.BLL.Logic.Implementations
     {
         private readonly ICustomerDAL _customerDAL;
         private readonly IMapper _mapper;
-        public CustomerManager(ICustomerDAL customerDAL, IMapper mapper)
+        private readonly IOrderDAL _orderDAL;
+        public CustomerManager(ICustomerDAL customerDAL, IMapper mapper, IOrderDAL orderDAL)
         {
             _mapper = mapper;
             _customerDAL = customerDAL;
+            _orderDAL = orderDAL;
         }
         public CustomerDTO Add(CustomerDTO customer)
         {
             Customer customerEntity = _mapper.Map<Customer>(customer);
-            //_customerDAL.Save(customerEntity);
+            _customerDAL.Save(customerEntity);
+            customer = _mapper.Map<CustomerDTO>(customerEntity);
             return customer;
         }
 
