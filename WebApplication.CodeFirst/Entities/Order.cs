@@ -11,5 +11,6 @@ namespace WebApplication.CodeFirst.Entities
         public DateTime Date { get; set; }
         public decimal TotalAmount { get; set; }
         public int Status { get; set; }
+        public Employee Employee { get; set; }
     }
 }
