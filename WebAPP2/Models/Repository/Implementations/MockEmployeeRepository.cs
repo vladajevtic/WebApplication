@@ -1,13 +1,13 @@
 ﻿
 using SEDCWebApplication.BLL.Logic.Models;
 
-using SEDCWebApplication12.Models.Repository.Interfaces;
+using WebAPP2.Models.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SEDCWebApplication12.Models.Repository.Implementations
+namespace WebAPP2.Models.Repository.Implementations
 {
     public class MockEmployeeRepository : IEmployeeRepository
     {

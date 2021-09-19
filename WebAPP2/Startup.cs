@@ -8,8 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using SEDCWebApplication12.Models.Repository.Implementations;
-using SEDCWebApplication12.Models.Repository.Interfaces;
+//using SEDCWebApplication12.Models.Repository.Implementations;
+//using SEDCWebApplication12.Models.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +20,11 @@ using WebApplication.BLL.Logic.Interfaces;
 //using WebApplication.DAL.Data.Interfaces;
 using WebApplicationEntityFramework.Implementation;
 using WebApplicationEntityFramework.Interfaces;
-using SEDCWebAPI.Models.Repository.Implementations;
+using WebAPP2.Models.Repository.Implementations;
 using WebApplication.CodeFirst;
 using Microsoft.EntityFrameworkCore;
+using WebAPP2.Models.Repository.Interfaces;
+using Microsoft.OpenApi.Models;
 
 namespace WebAPP2
 {
@@ -43,13 +45,13 @@ namespace WebAPP2
                 .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SEDC2")));
-
+           
             services.AddAutoMapper(typeof(ProductManager));
             services.AddAutoMapper(typeof(EmployeeManager));
             services.AddAutoMapper(typeof(CustomerManager));
             services.AddScoped<IEmployeeRepository, DataBaseEmployeeRepository>();
             services.AddScoped<IProductRepository, DataBaseProductRepository>();
-            services.AddScoped<ICustomerRepository, SEDCWebAPI.Models.Repository.Implementations.DataBaseCustomerRepository>();
+            services.AddScoped<ICustomerRepository, DataBaseCustomerRepository>();
             services.AddScoped<IEmployeeManager, EmployeeManager>();
             services.AddScoped<IEmployeeDAL, EmployeeRepository>();
             services.AddScoped<ICustomerDAL, CustomerRepository>();
@@ -58,7 +60,16 @@ namespace WebAPP2
             services.AddScoped<IProductManager, ProductManager>();
             services.AddScoped<IOrderDAL, OrderRepository>();
 
-          
+            services.AddCors(options =>
+            {
+                options.AddPolicy("MyPolicy", builder =>
+                {
+
+                    builder.AllowAnyOrigin();
+                     builder.AllowAnyMethod();
+                     builder.AllowAnyHeader();
+                });
+        });
 
         }
 
@@ -71,12 +82,16 @@ namespace WebAPP2
             }
 
             app.UseHttpsRedirection();
-           
 
 
             app.UseRouting();
+           
+            app.UseCors();
+            
+            
 
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {

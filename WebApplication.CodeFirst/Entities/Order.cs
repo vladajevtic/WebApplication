@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace WebApplication.CodeFirst.Entities
@@ -12,5 +13,10 @@ namespace WebApplication.CodeFirst.Entities
         public decimal TotalAmount { get; set; }
         public int Status { get; set; }
         public Employee Employee { get; set; }
+        public Customer Customer { get; set; }
+
+        public ICollection<OrderItem> OrderItems { get; set; }
+
+        
     }
 }

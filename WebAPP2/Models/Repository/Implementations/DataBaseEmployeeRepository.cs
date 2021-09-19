@@ -1,12 +1,13 @@
-﻿using SEDCWebApplication.BLL.Logic.Models;
-using SEDCWebApplication12.Models.Repository.Interfaces;
+﻿using WebApplication.BLL.Logic.Models;
+using WebAPP2.Models.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Interfaces;
+using SEDCWebApplication.BLL.Logic.Models;
 
-namespace SEDCWebApplication12.Models.Repository.Implementations
+namespace WebAPP2.Models.Repository.Implementations
 {
     public class DataBaseEmployeeRepository : IEmployeeRepository
     {

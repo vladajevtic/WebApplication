@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebApplication.CodeFirst;
 
 namespace WebApplication.CodeFirst.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210917134133_OrderItem")]
+    partial class OrderItem
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -59,6 +61,12 @@ namespace WebApplication.CodeFirst.Migrations
                     b.Property<string>("Number")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("OrderItemOrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OrderItemProductId")
+                        .HasColumnType("int");
+
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
@@ -70,6 +78,10 @@ namespace WebApplication.CodeFirst.Migrations
                     b.HasIndex("CustomerId");
 
                     b.HasIndex("EmployeeId");
+
+                    b.HasIndex("OrderItemOrderId", "OrderItemProductId")
+                        .IsUnique()
+                        .HasFilter("[OrderItemOrderId] IS NOT NULL AND [OrderItemProductId] IS NOT NULL");
 
                     b.ToTable("Orders");
                 });
@@ -193,9 +205,15 @@ namespace WebApplication.CodeFirst.Migrations
                         .WithMany()
                         .HasForeignKey("EmployeeId");
 
+                    b.HasOne("WebApplication.CodeFirst.Entities.OrderItem", "OrderItem")
+                        .WithOne()
+                        .HasForeignKey("WebApplication.CodeFirst.Entities.Order", "OrderItemOrderId", "OrderItemProductId");
+
                     b.Navigation("Customer");
 
                     b.Navigation("Employee");
+
+                    b.Navigation("OrderItem");
                 });
 
             modelBuilder.Entity("WebApplication.CodeFirst.Entities.OrderItem", b =>

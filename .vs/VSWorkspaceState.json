@@ -6,6 +6,8 @@
     "\\WebApplication.BLL.Logic",
     "\\WebApplication.BLL.Logic\\Models",
     "\\WebApplication.CodeFirst",
+    "\\WebApplication.CodeFirst\\Entities",
+    "\\WebApplication.CodeFirst\\Migrations",
     "\\WebApplicationEntityFramework",
     "\\WebApplicationEntityFramework\\Entities",
     "\\WebApplicationEntityFramework\\Implementation"

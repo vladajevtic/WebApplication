@@ -32,7 +32,7 @@ namespace WebApplication.BLL.Logic.Implementations
 
         public IEnumerable<CustomerDTO> GetAllCustomer()
         {
-            return _mapper.Map<List<CustomerDTO>>(_customerDAL.GetAll(0, 5));
+            return _mapper.Map<List<CustomerDTO>>(_customerDAL.GetAll(0, 50));
         }
 
         public CustomerDTO GetCustomerById(int id)

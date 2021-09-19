@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Models;
 
-namespace SEDCWebApplication12.Models.Repository.Interfaces
+namespace WebAPP2.Models.Repository.Interfaces
 {
     public interface ICustomerRepository
     {

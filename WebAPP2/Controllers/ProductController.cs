@@ -1,16 +1,18 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using SEDCWebApplication12.Models.Repository.Interfaces;
+using WebAPP2.Models.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Models;
+using Microsoft.AspNetCore.Cors;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebAPP2.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase

@@ -1,4 +1,6 @@
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.deps.json
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.runtimeconfig.json
+C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.runtimeconfig.dev.json
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.csproj.AssemblyReference.cache
@@ -8,6 +10,4 @@ C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\obj\Debug\ne
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.csproj.CoreCompileInputs.cache
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb
-C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.runtimeconfig.json
-C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.runtimeconfig.dev.json
 C:\Users\vlada\Source\Repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.genruntimeconfig.cache

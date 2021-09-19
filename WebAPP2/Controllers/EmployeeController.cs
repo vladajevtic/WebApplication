@@ -1,16 +1,18 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using SEDCWebApplication.BLL.Logic.Models;
-using SEDCWebApplication12.Models.Repository.Interfaces;
+using WebAPP2.Models.Repository.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace WebAPI.Controllers
+namespace WebAPP2.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
