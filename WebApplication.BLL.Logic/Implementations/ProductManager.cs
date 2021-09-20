@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.Text;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
-using WebApplicationEntityFramework.Entities;
+//using WebApplicationEntityFramework.Entities;
+//using WebApplicationEntityFramework.Interfaces;
 //using WebApplication.DAL.Data.Entities;
 //using WebApplication.DAL.Data.Interfaces;
-using WebApplicationEntityFramework.Interfaces;
+using WebApplication.CodeFirst.Interfaces;
+using WebApplication.CodeFirst.Entities;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
@@ -40,7 +42,7 @@ namespace WebApplication.BLL.Logic.Implementations
             }
             else
             {
-                var delete = 3;
+                //var delete = 3;
                 //product1.EntityState = (EntityStateEnum)delete;
                 _productDAL.Save(product1);
 

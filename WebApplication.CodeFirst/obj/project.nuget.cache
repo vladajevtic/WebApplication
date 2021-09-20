@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zckKFyC8asTklxHEkRBUqIrYz5Ab5iRzbwlYPh50c0236CPn3U8zn+OUzUDOUP/VoUdcuRE5t/T5oCv0zKCDwg==",
+  "dgSpecHash": "CabCApCaZYptlTt5PTpHO8avdZAnEYf/heZnPUWdRF107Zs5QadcmDETGUAq/ySkEZtwtEeKnBIor7D6Y4VkuQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,7 @@
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.10\\microsoft.entityframeworkcore.analyzers.5.0.10.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.10\\microsoft.entityframeworkcore.design.5.0.10.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.10\\microsoft.entityframeworkcore.relational.5.0.10.nupkg.sha512",
-    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.9\\microsoft.entityframeworkcore.sqlserver.5.0.9.nupkg.sha512",
+    "C:\\Users\\vlada\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.10\\microsoft.entityframeworkcore.sqlserver.5.0.10.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.10\\microsoft.entityframeworkcore.tools.5.0.10.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",

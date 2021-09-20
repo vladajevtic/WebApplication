@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebAPP2",
-    "\\WebAPP2\\Controllers",
+    "\\SEDCWebApplication12",
     "\\WebApplication.BLL.Logic",
     "\\WebApplication.BLL.Logic\\Models",
     "\\WebApplication.CodeFirst",
@@ -12,6 +11,6 @@
     "\\WebApplicationEntityFramework\\Entities",
     "\\WebApplicationEntityFramework\\Implementation"
   ],
-  "SelectedNode": "\\WebAPP2\\Startup.cs",
+  "SelectedNode": "\\SEDCWebApplication12.sln",
   "PreviewInSolutionExplorer": false
 }

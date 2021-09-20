@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using WebApplicationEntityFramework.Entities;
+
 
 namespace SEDCWebApplication.BLL.Logic.Models
 {
@@ -22,7 +22,7 @@ namespace SEDCWebApplication.BLL.Logic.Models
         public string Email { get; set; }
         public RoleEnum? Role { get; set; }
         public string ImagePath { get; set; }
-        public List<Order> Orders { get; set; }
+       // public List<Order> Orders { get; set; }
 
         public string Gender { get; set; }
         public bool Test { get; set; }

@@ -162,3 +162,5 @@ C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcor
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\obj\Debug\netcoreapp3.1\SEDCWebApplication12.genruntimeconfig.cache
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
+C:\Users\vlada\Source\Repos\WebApplication\SEDCWebApplication12\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb

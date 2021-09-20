@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebApplication.CodeFirst\WebApplication.CodeFirst.csproj" />
     <ProjectReference Include="..\WebApplication.DAL.Data\WebApplication.DAL.Data.csproj" />
     <ProjectReference Include="..\WebApplicationEntityFramework\WebApplicationEntityFramework.csproj" />
   </ItemGroup>

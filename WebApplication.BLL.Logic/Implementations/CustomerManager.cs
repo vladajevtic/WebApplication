@@ -6,8 +6,10 @@ using System.Text;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
 //using WebApplication.DAL.Data.Interfaces;
-using WebApplicationEntityFramework.Interfaces;
-using WebApplicationEntityFramework.Entities;
+//using WebApplicationEntityFramework.Interfaces;
+//using WebApplicationEntityFramework.Entities;
+using WebApplication.CodeFirst.Interfaces;
+using WebApplication.CodeFirst.Entities;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
