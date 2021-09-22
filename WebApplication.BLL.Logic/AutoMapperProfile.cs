@@ -4,7 +4,8 @@ using SEDCWebApplication.BLL.Logic.Models;
 using System;
 using WebApplication.BLL.Logic.Models;
 //using WebApplication.DAL.Data.Entities;
-using WebApplicationEntityFramework.Entities;
+//using WebApplicationEntityFramework.Entities;
+using WebApplication.CodeFirst.Entities;
 
 
 namespace WebApplication.BLL.Logic
@@ -15,7 +16,7 @@ namespace WebApplication.BLL.Logic
         {
             CreateMap<Employee, EmployeeDTO>();
             CreateMap<EmployeeDTO, Employee>()
-                .ForMember(dest => dest.EmployeeName, src => src.MapFrom(src => src.Email))
+                .ForMember(dest => dest.Name, src => src.MapFrom(src => src.Email))
                 .ForMember(dest => dest.RoleId, src => src.MapFrom(src => src.Role));
             CreateMap<WebApplicationEntityFramework.Entities.Employee, EmployeeDTO>()
                 .ForMember(dest => dest.Id, src => src.MapFrom(src => src.EmployeeId))
@@ -40,13 +41,16 @@ namespace WebApplication.BLL.Logic
 
             CreateMap<Customer, CustomerDTO>();
             CreateMap<CustomerDTO, Customer>()
-                .ForMember(dest => dest.CustomerName, src => src.MapFrom(src => src.Email));
+                .ForMember(dest => dest.Name, src => src.MapFrom(src => src.Email));
             CreateMap<WebApplicationEntityFramework.Entities.Customer, CustomerDTO>()
                 .ForMember(dest => dest.Name, src => src.MapFrom(src => src.CustomerName))
                 .ForMember(dest => dest.Id, src => src.MapFrom(src => src.CustomerId));
             CreateMap<CustomerDTO, WebApplicationEntityFramework.Entities.Customer>()
                 .ForMember(dest => dest.CustomerName, src => src.MapFrom(src => src.Name))
                 .ForMember(dest => dest.CustomerId, src => src.MapFrom(src => src.Id));
+            CreateMap<Order, OrderDTO>();
+
+            CreateMap<User, UserDTO>();
         }
     }
 }

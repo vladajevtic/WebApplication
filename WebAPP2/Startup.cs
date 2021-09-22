@@ -27,6 +27,8 @@ using WebApplication.CodeFirst;
 using Microsoft.EntityFrameworkCore;
 using WebAPP2.Models.Repository.Interfaces;
 using Microsoft.OpenApi.Models;
+using WebAPP2.Services.Interfaces;
+using WebAPP2.Services.Implementations;
 
 namespace WebAPP2
 {
@@ -51,16 +53,25 @@ namespace WebAPP2
             services.AddAutoMapper(typeof(ProductManager));
             services.AddAutoMapper(typeof(EmployeeManager));
             services.AddAutoMapper(typeof(CustomerManager));
+            services.AddAutoMapper(typeof(OrderManager));
+            //wepAPI
             services.AddScoped<IEmployeeRepository, DataBaseEmployeeRepository>();
             services.AddScoped<IProductRepository, DataBaseProductRepository>();
             services.AddScoped<ICustomerRepository, DataBaseCustomerRepository>();
-            services.AddScoped<IEmployeeManager, EmployeeManager>();
+            services.AddScoped<IOrderRepository, DataBaseOrderRepository>();
+            services.AddScoped<IUserService, UserService>();
+            //DAL
             services.AddScoped<IEmployeeDAL, EmployeeRepository>();
             services.AddScoped<ICustomerDAL, CustomerRepository>();
-            services.AddScoped<ICustomerManager, CustomerManager>();
             services.AddScoped<IProductDAL, ProductRepository>();
-            services.AddScoped<IProductManager, ProductManager>();
             services.AddScoped<IOrderDAL, OrderRepository>();
+            services.AddScoped<IUserDAL, UserRepository>();
+            //BLL
+            services.AddScoped<IEmployeeManager, EmployeeManager>();
+            services.AddScoped<ICustomerManager, CustomerManager>();
+            services.AddScoped<IProductManager, ProductManager>();
+            services.AddScoped<IOrderManager, OrderManager>();
+            services.AddScoped<IUserManager, UserManager>();
 
             services.AddCors(options =>
             {
