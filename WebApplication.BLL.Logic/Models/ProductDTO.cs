@@ -9,8 +9,7 @@ namespace WebApplication.BLL.Logic.Models
 {
     public class ProductDTO
     {
-        public int? Id { get; set; }
-        [Required(ErrorMessage = "Name is required")]
+        public int? Id { get; set; }       
         public string Name { get; set; }
         public decimal Price { get; set; }
         public bool? IsDiscounted { get; set; }

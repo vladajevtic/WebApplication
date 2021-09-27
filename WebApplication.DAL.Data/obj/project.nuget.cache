@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o/WhP+adqcM470uT6Vl99afDZ8WmKkFKqze1LHccLgf6MQDErcJXxRB28zgbcjP2y022oQBA9thTIRsZRlGpzQ==",
+  "dgSpecHash": "a3bZ/mn2kguh0fQ7BBKp13ya2Cnl7Gs5PO5rpIn9j6aDqS/S7z2J2yAYbidorg8lr47rMh8432LFrPe5fQcr5Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+  "projectFilePath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlada\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

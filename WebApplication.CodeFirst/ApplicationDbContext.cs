@@ -17,20 +17,7 @@ namespace WebApplication.CodeFirst
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contact { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<OrderItem>()
-                .HasKey(t => new { t.OrderId, t.ProductId });
+        public DbSet<OrderItem> OrderItems { get; set; }
 
-            modelBuilder.Entity<OrderItem>()
-                .HasOne(pt => pt.Order)
-                .WithMany(p => p.OrderItems)
-                .HasForeignKey(pt => pt.OrderId);
-
-            modelBuilder.Entity<OrderItem>()
-                .HasOne(pt => pt.Product)
-                .WithMany(t => t.OrderItems)
-                .HasForeignKey(pt => pt.ProductId);
-        }
     }
 }

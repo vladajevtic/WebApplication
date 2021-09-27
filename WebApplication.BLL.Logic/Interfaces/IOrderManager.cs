@@ -9,7 +9,10 @@ namespace WebApplication.BLL.Logic.Interfaces
     {
         OrderDTO GetById(int id);
         List<OrderDTO> GetByEmployeeId(int id);
-
+        OrderDTO Add(OrderDTO orderDTO);
         IEnumerable<OrderDTO> GetAll();
+
+
+        
     }
 }

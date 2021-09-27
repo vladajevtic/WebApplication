@@ -30,14 +30,14 @@ namespace WebApplication.BLL.Logic
             
             CreateMap<Product, ProductDTO>();
             CreateMap<ProductDTO, Product>();
-            CreateMap<WebApplicationEntityFramework.Entities.Product, ProductDTO>()
-                .ForMember(dest => dest.Name, src => src.MapFrom(src => src.ProductName))
-                .ForMember(dest => dest.Price, src => src.MapFrom(src => src.UnitPrice))
-                .ForMember(dest => dest.Id, src => src.MapFrom(src => src.ProductId)); 
-            CreateMap<ProductDTO, WebApplicationEntityFramework.Entities.Product>()
-                .ForMember(dest => dest.ProductName, src => src.MapFrom(src => src.Name))
-                .ForMember(dest => dest.UnitPrice, src => src.MapFrom(src => src.Price))
-                .ForMember(dest => dest.ProductId, src => src.MapFrom(src => src.Id));
+            CreateMap<Product, ProductDTO>()
+
+                .ForMember(dest => dest.Price, src => src.MapFrom(src => src.UnitPrice));
+
+            CreateMap<ProductDTO,Product>()
+
+                .ForMember(dest => dest.UnitPrice, src => src.MapFrom(src => src.Price));
+                
 
             CreateMap<Customer, CustomerDTO>();
             CreateMap<CustomerDTO, Customer>()
@@ -51,6 +51,10 @@ namespace WebApplication.BLL.Logic
             CreateMap<Order, OrderDTO>();
 
             CreateMap<User, UserDTO>();
+            CreateMap<Order, OrderDTO>();
+            CreateMap<OrderDTO, Order>();
+            CreateMap<OrderItem, OrderItemDTO>();
+            CreateMap<OrderItemDTO, OrderItem>();
         }
     }
 }

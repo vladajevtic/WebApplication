@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {}
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
         "projectName": "WebApplication.DAL.Data",
-        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
         "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\obj\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",

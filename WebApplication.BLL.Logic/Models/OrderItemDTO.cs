@@ -5,9 +5,10 @@ using WebApplication.CodeFirst.Entities;
 
 namespace WebApplication.BLL.Logic.Models
 {
-    public class OrderDTO
+    public class OrderItemDTO
     {
-        
-        public ICollection<OrderItemDTO> OrderItems { get; set; }
+        public int ProductId { get; set; }//productId
+        public int Quantity { get; set; }//quantity
+
     }
 }

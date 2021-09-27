@@ -1,9 +1,12 @@
 ﻿using AutoMapper;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
+using WebApplication.CodeFirst.Entities;
 using WebApplication.CodeFirst.Interfaces;
 //using WebApplicationEntityFramework.Entities;
 //using WebApplicationEntityFramework.Interfaces;
@@ -13,13 +16,46 @@ namespace WebApplication.BLL.Logic.Implementations
     public class OrderManager : IOrderManager
     {
         private readonly IOrderDAL _orderDAL;
+        private readonly IProductDAL _productDAL;
         private readonly IMapper _mapper;
 
-        public OrderManager(IOrderDAL orderDAL, IMapper mapper)
+        public OrderManager(IOrderDAL orderDAL, IMapper mapper, IProductDAL productDAL)
         {
             _orderDAL = orderDAL;
             _mapper = mapper;
+            _productDAL = productDAL;
         }
+
+        public OrderDTO Add(OrderDTO orderDTO)
+        {
+            
+            Order orderEntity = new Order();
+            orderEntity.TotalAmount = 0;
+            orderEntity.OrderItems = new List<OrderItem>();
+            DateTime date = new DateTime();
+            
+            orderEntity.Number = "N" + date;
+            orderEntity.Date = date;
+            orderEntity.Status = 1;
+            foreach (var order in orderDTO.OrderItems)
+            {
+                Product product = _productDAL.GetById(order.ProductId);
+                orderEntity.TotalAmount += (decimal)(product.UnitPrice * order.Quantity);
+                OrderItem orderItems = new OrderItem();
+                orderItems.ProductId = product.Id;
+                orderItems.Quantity = order.Quantity;
+
+                orderEntity.OrderItems.Add(orderItems);
+            }
+            
+            
+            _orderDAL.Save(orderEntity);
+            
+            
+            return orderDTO;
+
+        }
+
         public IEnumerable<OrderDTO> GetAll()
         {
            return _mapper.Map<List<OrderDTO>>(_orderDAL.GetAll(0, 50));

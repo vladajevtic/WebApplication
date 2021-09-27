@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5DhiW7aVIxg2DZWjv1zwns24+mF8bTuRj3C570lGqcYw9EBJdNuh1xAylUwffmaNVBEWhazd31uNd2P2ZSZrRA==",
+  "dgSpecHash": "uNJwmgPHmBYN60JKPOD9vfHTJ4TePEeZm0gnS/uqJCSxSpwRlENY8nt+ndxenoGnOOwpU7T+cqEULwGHfwD95Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
+  "projectFilePath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlada\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

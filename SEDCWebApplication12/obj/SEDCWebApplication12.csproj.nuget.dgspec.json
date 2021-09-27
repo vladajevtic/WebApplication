@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
         "projectName": "WebApplication.BLL.Logic",
-        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
         "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\obj\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -105,14 +105,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj": {
-                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj"
+              "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj"
               },
-              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
-                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj"
+              "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj"
               },
-              "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {
-                "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj"
+              "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {
+                "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj"
               }
             }
           }
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj": {
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
         "projectName": "WebApplication.CodeFirst",
-        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
         "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\obj\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -221,14 +221,14 @@
         }
       }
     },
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
         "projectName": "WebApplication.DAL.Data",
-        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\WebApplication.DAL.Data.csproj",
         "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.DAL.Data\\obj\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.DAL.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -301,14 +301,14 @@
         }
       }
     },
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
         "projectName": "WebApplicationEntityFramework",
-        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
         "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\obj\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",

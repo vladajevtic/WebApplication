@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MGVVb2C7cHR8JLxDKbS+8NN7sl4PurxfN2wHnp/lo+qtmXC7jpiP2HoOvMy3zGxApBAHqFIu07bCRhNrkylVfg==",
+  "dgSpecHash": "yIm6a43d11CfVKT+s130v7QOQFZgiOUUrJKZ+dEn9Xb4iAWmseGrfxLFyJ8ICAAOhLuLECypjfE6CrNMlecmZg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
+  "projectFilePath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlada\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

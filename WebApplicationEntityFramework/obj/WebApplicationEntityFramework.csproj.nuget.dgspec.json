@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {}
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {
+    "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
+        "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
         "projectName": "WebApplicationEntityFramework",
-        "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
+        "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\WebApplicationEntityFramework.csproj",
         "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplicationEntityFramework\\obj\\",
+        "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplicationEntityFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",

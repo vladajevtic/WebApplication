@@ -33,7 +33,10 @@ namespace WebAPP2.Controllers
         {
             UserDTO user = _userService.Authenticate(authenticateModel.UserName, authenticateModel.Password);
             if (user == null)
+            {
                 return BadRequest(new { message = "User name or password is incorect" });
+
+            }
             return Ok(user);
         }
     }

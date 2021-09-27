@@ -16,17 +16,21 @@ namespace WebAPP2.Models.Repository.Implementations
             }
         public IEnumerable<OrderDTO> GetAll()
         {
-            throw new NotImplementedException();
+           return _orderManager.GetAll();
         }
 
         public List<OrderDTO> GetByEmployeeId(int id)
         {
-            throw new NotImplementedException();
+           return _orderManager.GetByEmployeeId(id);
         }
 
         public OrderDTO GetById(int id)
         {
-            throw new NotImplementedException();
+            return _orderManager.GetById(id);
+        }
+        public OrderDTO Add(OrderDTO orderDTO)
+        {
+            return _orderManager.Add(orderDTO);
         }
     }
 }

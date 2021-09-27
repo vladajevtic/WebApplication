@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CabCApCaZYptlTt5PTpHO8avdZAnEYf/heZnPUWdRF107Zs5QadcmDETGUAq/ySkEZtwtEeKnBIor7D6Y4VkuQ==",
+  "dgSpecHash": "32eOseQmxX4/uGmCoh2ltkxIxanlC+OePevptAKjXDV4lO4XPLASd6/pGMezq4XBCkTsKsSobJm3JDBkpADvBw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
+  "projectFilePath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.CodeFirst\\WebApplication.CodeFirst.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlada\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

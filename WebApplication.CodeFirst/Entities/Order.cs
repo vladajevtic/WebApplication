@@ -14,9 +14,6 @@ namespace WebApplication.CodeFirst.Entities
         public int Status { get; set; }
         public Employee Employee { get; set; }
         public Customer Customer { get; set; }
-
-        public ICollection<OrderItem> OrderItems { get; set; }
-
-        
+        public ICollection<OrderItem> OrderItems { get; set; }   //[{productId,quantity}, {productId,quantity}]    
     }
 }

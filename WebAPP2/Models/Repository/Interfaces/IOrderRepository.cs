@@ -10,7 +10,7 @@ namespace WebAPP2.Models.Repository.Interfaces
     {
         OrderDTO GetById(int id);
         List<OrderDTO> GetByEmployeeId(int id);
-
         IEnumerable<OrderDTO> GetAll();
+        OrderDTO Add(OrderDTO orderDTO);
     }
 }

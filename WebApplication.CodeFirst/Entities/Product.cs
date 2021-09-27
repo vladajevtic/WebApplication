@@ -13,6 +13,6 @@ namespace WebApplication.CodeFirst.Entities
         public bool? IsActive { get; set; }
         public bool? IsDeleted { get; set; }
         public string Size { get; set; }
-        public ICollection<OrderItem> OrderItems { get; set; }
+        public ICollection<OrderItem> OrderItems { get; set; }// ???????? [{productId,quantity}, {productId,quantity}]   
     }
 }
