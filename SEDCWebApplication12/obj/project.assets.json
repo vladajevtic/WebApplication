@@ -8040,11 +8040,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
+      "projectUniqueName": "C:\\Users\\vlada\\source\\repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
       "projectName": "SEDCWebApplication12",
-      "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
+      "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
       "packagesPath": "C:\\Users\\vlada\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\obj\\",
+      "outputPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\SEDCWebApplication12\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vlada\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8061,8 +8061,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
-              "projectPath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj"
+            "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj": {
+              "projectPath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\WebApplication.BLL.Logic\\WebApplication.BLL.Logic.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FlHxdi6Apr8RlKrgkPZBMuwA7HGuNtVKHEjtmiaqAckoSAh2y/omPcV8o+qkKoeZD7xdVdtjEMiDJCGXOT/wjQ==",
+  "dgSpecHash": "dNJIEUmt5X3EJqJ1E3gvmcqPTlpHVw+K5YETh5VVj6CuzwdvZEWeG5W0dg0cKTdENjsajb7pn0Fj3Tk93mk5nQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vlada\\Source\\Repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
+  "projectFilePath": "C:\\Users\\vlada\\source\\repos\\WebApplication\\SEDCWebApplication12\\SEDCWebApplication12.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vlada\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\vlada\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

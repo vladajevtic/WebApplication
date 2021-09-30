@@ -32,7 +32,7 @@ namespace WebApplication.BLL.Logic.Implementations
             Order orderEntity = new Order();
             orderEntity.TotalAmount = 0;
             orderEntity.OrderItems = new List<OrderItem>();
-            DateTime date = new DateTime();
+            DateTime date = DateTime.Now;
             
             orderEntity.Number = "N" + date;
             orderEntity.Date = date;

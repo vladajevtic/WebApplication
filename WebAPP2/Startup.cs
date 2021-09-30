@@ -45,7 +45,7 @@ namespace WebAPP2
                 jsonInputFormatter.SupportedMediaTypes.Add("application/csp-report");
                 jsonInputFormatter.SupportedMediaTypes.Add("application/json");
             }
-  );
+        );
             services.AddControllers()
                 .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ using WebApplication.BLL.Logic.Models;
 
 namespace WebAPP2.Controllers
 {
+    [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase
@@ -38,7 +40,7 @@ namespace WebAPP2.Controllers
 
         // POST api/<OrderController>
         [HttpPost]
-        public void Post([FromForm] OrderDTO orderDTO)
+        public void Post([FromBody] OrderDTO orderDTO)
         {
 
             _orderRepository.Add(orderDTO);
