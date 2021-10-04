@@ -7,6 +7,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
+using WebAPP2.Helpers;
+using WebApplication.BLL.Logic.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,6 +18,7 @@ namespace WebAPP2.Controllers
     [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = AuthorizationRoles.Admin)]
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -29,7 +33,9 @@ namespace WebAPP2.Controllers
         [HttpGet]
         public IEnumerable<EmployeeDTO> Get()
         {
+            UserDTO user = (UserDTO)HttpContext.Items["User"];
             return _employeeRepository.GetAllEmployees();
+
         }
 
         // GET api/<EmployeeController>/5

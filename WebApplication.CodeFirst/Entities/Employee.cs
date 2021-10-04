@@ -9,9 +9,7 @@ namespace WebApplication.CodeFirst.Entities
        
         public string Name { get; set; }
 
-        public string Gender { get; set; }
-
-        public int RoleId { get; set; }
+        public string Gender { get; set; }       
 
         public DateTime DateOfBirth { get; set; }
     }

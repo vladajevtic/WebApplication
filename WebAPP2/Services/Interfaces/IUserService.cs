@@ -9,5 +9,6 @@ namespace WebAPP2.Services.Interfaces
     public interface IUserService
     {
         UserDTO Authenticate(string userName, string password);
+        UserDTO GetById(int id);
     }
 }

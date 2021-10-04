@@ -8,5 +8,6 @@ namespace WebApplication.CodeFirst.Interfaces
     public interface IUserDAL
     {
         User GetUserByUserNameAndPassword(string userName, string password);
+        User GetById(int id);
     }
 }

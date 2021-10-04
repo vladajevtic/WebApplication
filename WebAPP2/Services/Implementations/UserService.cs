@@ -1,4 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -17,8 +18,10 @@ namespace WebAPP2.Services.Implementations
     {
         private readonly IUserManager _userManager;
 
-        public UserService(IUserManager userManager)
+        private readonly IConfiguration _configuration;
+       public UserService(IUserManager userManager, IConfiguration configuration)
         {
+            _configuration = configuration;
             _userManager = userManager;
         }
         public UserDTO Authenticate(string userName, string password)
@@ -27,14 +30,14 @@ namespace WebAPP2.Services.Implementations
             // JWT token generate
 
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.ASCII.GetBytes("pizzashop pizzashop pizzashop pizzashop pizzashop");
+            var key = Encoding.ASCII.GetBytes(_configuration.GetSection("AppSettings")["Secret"]);
 
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim(ClaimTypes.Name, userDTO.Id.ToString()),
-                    new Claim(ClaimTypes.Role, "admin")
+                    new Claim(ClaimTypes.Role, userDTO.Role)
                 }),
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
@@ -45,6 +48,11 @@ namespace WebAPP2.Services.Implementations
             userDTO.Token = tokenHandler.WriteToken(token);
 
             return userDTO;
+        }
+
+        public UserDTO GetById(int id)
+        {
+            return _userManager.GetById(id);
         }
     }
 }

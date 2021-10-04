@@ -15,6 +15,7 @@ namespace WebAPP2.Controllers
     [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
+    
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerRepository _customerRepository;

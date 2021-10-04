@@ -2,6 +2,7 @@
 using SEDCWebApplication.BLL.Logic.Models;
 //using SEDCWebApplication12.Models;
 using System;
+using WebApplication.BLL.Logic.Helpers;
 using WebApplication.BLL.Logic.Models;
 //using WebApplication.DAL.Data.Entities;
 //using WebApplicationEntityFramework.Entities;
@@ -50,7 +51,8 @@ namespace WebApplication.BLL.Logic
                 .ForMember(dest => dest.CustomerId, src => src.MapFrom(src => src.Id));
             CreateMap<Order, OrderDTO>();
 
-            CreateMap<User, UserDTO>();
+            CreateMap<User, UserDTO>()
+                .ForMember(dest => dest.Role, src => src.MapFrom(src => EnumHelper.GetString<RoleEnum>(src.RoleId)));
             CreateMap<Order, OrderDTO>();
             CreateMap<OrderDTO, Order>();
             CreateMap<OrderItem, OrderItemDTO>();

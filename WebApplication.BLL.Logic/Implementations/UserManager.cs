@@ -37,5 +37,23 @@ namespace WebApplication.BLL.Logic.Implementations
                 throw ex;
             }
         }
+        public UserDTO GetById(int id)
+        {
+            try
+            {
+                User user = _userDAL.GetById(id);
+                if (user == null)
+                {
+                    throw new Exception($"Employee with {id} not found");
+                }
+                UserDTO userDTO = _mapper.Map<UserDTO>(_userDAL.GetById(id));
+                //employeeDTO.Orders = _orderDAL.GetByEmployeeId(employee.Id);
+                return userDTO;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

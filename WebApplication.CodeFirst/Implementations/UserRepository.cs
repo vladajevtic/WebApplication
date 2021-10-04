@@ -25,5 +25,14 @@ namespace WebApplication.CodeFirst.Implementations
                 return result;
             }
         }
+        public User GetById(int id)
+        {
+            var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+            using (var db = new ApplicationDbContext(optionBuilder.Options))
+            {
+                User result = db.Users.First(u => u.Id == id);
+                return result;
+            }
+        }
     }
 }
