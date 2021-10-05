@@ -47,9 +47,9 @@ namespace WebAPP2.Models.Repository.Implementations
 
         }
 
-        public ProductDTO Update(ProductDTO product)
+        public ProductDTO Update(int id, ProductDTO product)
         {
-            return _productManager.Update(product);
+            return _productManager.Update(id, product);
         }
     }
 }

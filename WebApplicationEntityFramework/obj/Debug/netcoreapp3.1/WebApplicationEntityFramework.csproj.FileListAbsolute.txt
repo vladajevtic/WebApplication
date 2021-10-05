@@ -3,7 +3,6 @@ C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\bin\Deb
 C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\bin\Debug\netcoreapp3.1\WebApplicationEntityFramework.runtimeconfig.dev.json
 C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\bin\Debug\netcoreapp3.1\WebApplicationEntityFramework.dll
 C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\bin\Debug\netcoreapp3.1\WebApplicationEntityFramework.pdb
-C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\obj\Debug\netcoreapp3.1\WebApplicationEntityFramework.csproj.AssemblyReference.cache
 C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\obj\Debug\netcoreapp3.1\WebApplicationEntityFramework.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\obj\Debug\netcoreapp3.1\WebApplicationEntityFramework.AssemblyInfoInputs.cache
 C:\Users\vlada\source\repos\WebApplication\WebApplicationEntityFramework\obj\Debug\netcoreapp3.1\WebApplicationEntityFramework.AssemblyInfo.cs

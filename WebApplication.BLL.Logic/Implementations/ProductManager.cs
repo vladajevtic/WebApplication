@@ -44,6 +44,7 @@ namespace WebApplication.BLL.Logic.Implementations
             {
                 //var delete = 3;
                 //product1.EntityState = (EntityStateEnum)delete;
+                product1.IsDeleted = true;
                 _productDAL.Save(product1);
 
                 return _mapper.Map<ProductDTO>(product1);
@@ -60,7 +61,7 @@ namespace WebApplication.BLL.Logic.Implementations
             try
             {
                 Product product = _productDAL.GetById(id);
-                if (product == null)
+                if (product == null && product.IsDeleted == true)
                 {
                     throw new Exception($"Product with {id} id not found");
                 }
@@ -72,10 +73,10 @@ namespace WebApplication.BLL.Logic.Implementations
             }
         }
 
-        public ProductDTO Update(ProductDTO product)
+        public ProductDTO Update(int id, ProductDTO product)
         {
             Product productEntity = _mapper.Map<Product>(product);
-            _productDAL.Save(productEntity);
+            _productDAL.Update(id, productEntity);
             product = _mapper.Map<ProductDTO>(productEntity);
 
             return product;

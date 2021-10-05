@@ -8,6 +8,7 @@ namespace WebApplication.CodeFirst.Interfaces
     public interface IProductDAL
     {
         void Save(Product item);
+        void Update(int id, Product item);
 
         Product GetById(int id);
 

@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Models;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Authorization;
+using WebAPP2.Helpers;
 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,6 +17,7 @@ namespace WebAPP2.Controllers
     [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = AuthorizationRoles.Client)]
     public class ProductController : ControllerBase
     {
         private readonly IProductRepository _product;
@@ -46,8 +49,10 @@ namespace WebAPP2.Controllers
 
         // PUT api/<ProductController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] ProductDTO product)
         {
+            _product.Update(id, product);
+
         }
 
         // DELETE api/<ProductController>/5

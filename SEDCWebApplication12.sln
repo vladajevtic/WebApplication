@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPP2", "WebAPP2\WebAPP2.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationEntityFramework", "WebApplicationEntityFramework\WebApplicationEntityFramework.csproj", "{5F46248B-D2F1-4B61-A5E9-11B5BEC3D4D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication.CodeFirst", "WebApplication.CodeFirst\WebApplication.CodeFirst.csproj", "{A498BE2E-39CD-45CE-9AC8-4A9822B9F8AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication.CodeFirst", "WebApplication.CodeFirst\WebApplication.CodeFirst.csproj", "{A498BE2E-39CD-45CE-9AC8-4A9822B9F8AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

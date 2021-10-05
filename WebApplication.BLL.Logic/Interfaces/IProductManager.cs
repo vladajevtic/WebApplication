@@ -10,7 +10,7 @@ namespace WebApplication.BLL.Logic.Interfaces
         IEnumerable<ProductDTO> GetAllProduct();
         ProductDTO GetProductById(int id);
         ProductDTO Add(ProductDTO product);
-        ProductDTO Update(ProductDTO product);
+        ProductDTO Update(int id, ProductDTO product);
         ProductDTO Delete(ProductDTO product);
     }
 }

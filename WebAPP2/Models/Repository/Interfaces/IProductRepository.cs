@@ -14,7 +14,7 @@ namespace WebAPP2.Models.Repository.Interfaces
 
         ProductDTO AddProduct(ProductDTO product);
 
-        ProductDTO Update(ProductDTO product);
+        ProductDTO Update(int id, ProductDTO product);
 
         ProductDTO Delete(ProductDTO product);
 
