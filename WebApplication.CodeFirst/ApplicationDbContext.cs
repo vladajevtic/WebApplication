@@ -16,7 +16,6 @@ namespace WebApplication.CodeFirst
         public DbSet<Product> Products { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Contact> Contact { get; set; }
-
         public DbSet<OrderItem> OrderItems { get; set; }
 
     }

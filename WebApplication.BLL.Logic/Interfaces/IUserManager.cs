@@ -9,5 +9,7 @@ namespace WebApplication.BLL.Logic.Interfaces
     {
         UserDTO GetUserByUserNameAndPassword(string userName, string password);
         UserDTO GetById(int id);
+        //UserDTO Delete(UserDTO user);
+        //UserDTO Update(int id, UserDTO user);
     }
 }

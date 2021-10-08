@@ -47,7 +47,7 @@ namespace WebApplication.CodeFirst.Implementations
             }
         }
 
-        public void Update(int id, Product item)
+        public void Update(Product item)
         {
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
             using (var db = new ApplicationDbContext(optionBuilder.Options))

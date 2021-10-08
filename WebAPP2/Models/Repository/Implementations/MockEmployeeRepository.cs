@@ -59,5 +59,15 @@ namespace WebAPP2.Models.Repository.Implementations
             _employeeList.Add(employee);
             return _employeeList.Where(x => x.Id == employee.Id).FirstOrDefault();
         }
+
+        public EmployeeDTO Update(EmployeeDTO employee)
+        {
+            throw new NotImplementedException();
+        }
+
+        public EmployeeDTO Delete(EmployeeDTO employee)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

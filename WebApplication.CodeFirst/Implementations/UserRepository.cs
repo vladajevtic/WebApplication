@@ -34,5 +34,25 @@ namespace WebApplication.CodeFirst.Implementations
                 return result;
             }
         }
+
+        //public void Update(int id, User user)
+        //{
+        //    var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+        //    using (var db = new ApplicationDbContext(optionBuilder.Options))
+        //    {
+        //        db.Entry<User>(user).State = EntityState.Modified;
+        //        db.SaveChanges();
+        //    }
+        //}
+
+        //public void Save(User item)
+        //{
+        //    var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+        //    using (var db = new ApplicationDbContext(optionBuilder.Options))
+        //    {
+        //        db.Users.Add(item);
+        //        db.SaveChanges();
+        //    }
+        //}
     }
 }

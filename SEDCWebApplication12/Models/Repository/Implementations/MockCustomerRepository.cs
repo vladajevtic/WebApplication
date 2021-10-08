@@ -19,7 +19,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                     Id = 1,
                     Name = "Pera",
                     ContactId = 1,
-                    Email = "nest@gmail.com",
+                    
                     ImagePath = "../image/avatar.png"
                 },
                 new CustomerDTO
@@ -27,7 +27,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                     Id = 2,
                     Name = "Mika",
                     ContactId = 2,
-                    Email = "nest@gmail.com",
+                    
                     ImagePath = "../image/avatar.png"
                 },
                 new CustomerDTO
@@ -35,7 +35,7 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
                     Id = 3,
                     Name = "Zika",
                     ContactId = 3,
-                    Email = "nest@gmail.com",
+                    
                     ImagePath = "../image/avatar.png"
                 }
             };

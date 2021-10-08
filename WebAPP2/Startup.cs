@@ -26,6 +26,8 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using WebAPP2.Middlewares;
+using Microsoft.OpenApi.Models;
+using System;
 
 namespace WebAPP2
 {
@@ -74,12 +76,21 @@ namespace WebAPP2
                 };
             });
 
+            services.AddCors(options =>
+            {
+            options.AddPolicy("MyPolicy", builder =>
+                {
 
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyHeader();
+                });
+            });
             services.AddAutoMapper(typeof(ProductManager));
             services.AddAutoMapper(typeof(EmployeeManager));
             services.AddAutoMapper(typeof(CustomerManager));
             services.AddAutoMapper(typeof(OrderManager));
-            
+
             //wepAPI
             services.AddScoped<IEmployeeRepository, DataBaseEmployeeRepository>();
             services.AddScoped<IProductRepository, DataBaseProductRepository>();
@@ -99,17 +110,35 @@ namespace WebAPP2
             services.AddScoped<IOrderDAL, OrderRepository>();
             services.AddScoped<IUserDAL, UserRepository>();
 
-            services.AddCors(options =>
+            services.AddSwaggerGen(c =>
             {
-                options.AddPolicy("MyPolicy", builder =>
-                {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "SEDC Web API", Version = "v1" });
 
-                    builder.AllowAnyOrigin();
-                     builder.AllowAnyMethod();
-                     builder.AllowAnyHeader();
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = "JWT Authorization header using the Bearer scheme (Example: 'Bearer 12345abcdef')",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.Http,
+                    Scheme = "Bearer"
                 });
-                
-        });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        Array.Empty<string>()
+                    }
+                });
+
+            });
 
         }
 
@@ -138,8 +167,9 @@ namespace WebAPP2
             {
                 endpoints.MapControllers();
             });
-   
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "SEDC Web API v1"));
         }
     }
 }

@@ -42,10 +42,7 @@ namespace WebAPP2.Controllers
         [HttpPost]
         public void Post([FromBody] OrderDTO orderDTO)
         {
-
-            _orderRepository.Add(orderDTO);
-            
-        
+            _orderRepository.Add(orderDTO);                  
         }
         
 

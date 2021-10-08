@@ -10,3 +10,4 @@ C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\ne
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.genruntimeconfig.cache
+C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.csproj.AssemblyReference.cache

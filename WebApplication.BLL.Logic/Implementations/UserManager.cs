@@ -25,14 +25,14 @@ namespace WebApplication.BLL.Logic.Implementations
             try
             {
                 User user = _userDAL.GetUserByUserNameAndPassword(userName, password);
-                if(user == null)
+                if (user == null)
                 {
                     throw new Exception("User not found");
                 }
                 UserDTO userDTO = _mapper.Map<UserDTO>(user);
                 return userDTO;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 throw ex;
             }
@@ -55,5 +55,31 @@ namespace WebApplication.BLL.Logic.Implementations
                 throw ex;
             }
         }
+
+        //public UserDTO Delete(UserDTO user)
+        //{
+        //    User user1 = _mapper.Map<User>(user);
+        //    if (user1.IsDeleted == true)
+        //    {
+        //        return user;
+        //    }
+        //    else
+        //    {
+        //        //var delete = 3;
+        //        //product1.EntityState = (EntityStateEnum)delete;
+        //        user1.IsDeleted = true;
+        //        _userDAL.Save(user1);
+
+        //        return _mapper.Map<UserDTO>(user1);
+        //    }
+        //}
+
+        //public UserDTO Update(int id, UserDTO user)
+        //{
+        //    User userEntity = _mapper.Map<User>(user);
+        //    _userDAL.Update(id, userEntity);
+        //    user = _mapper.Map<UserDTO>(userEntity);
+        //    return user;
+        //}
     }
 }

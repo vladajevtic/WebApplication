@@ -10,6 +10,7 @@ using WebApplication.BLL.Logic.Models;
 //using WebApplicationEntityFramework.Entities;
 using WebApplication.CodeFirst.Interfaces;
 using WebApplication.CodeFirst.Entities;
+using WebApplication.BLL.Logic.Helpers;
 
 namespace WebApplication.BLL.Logic.Implementations
 {
@@ -24,12 +25,39 @@ namespace WebApplication.BLL.Logic.Implementations
             _customerDAL = customerDAL;
             _orderDAL = orderDAL;
         }
-        public CustomerDTO Add(CustomerDTO customer)
+        public CustomerDTO Add(NewCustomerModel customer)
         {
-            Customer customerEntity = _mapper.Map<Customer>(customer);
+            //Customer customerEntity = _mapper.Map<Customer>(customer);
+            Customer customerEntity = new Customer();
+            Contact contactEntity = new Contact();
+            
+            contactEntity.Email = customer.Email;
+            contactEntity.Address = customer.Address;
+            contactEntity.Phone = customer.Phone;
+            customerEntity.Name = customer.Name;
+            customerEntity.ImagePath = customer.ImagePath;           
+            customerEntity.Contact = contactEntity;
             _customerDAL.Save(customerEntity);
-            customer = _mapper.Map<CustomerDTO>(customerEntity);
-            return customer;
+            CustomerDTO customerDto = _mapper.Map<CustomerDTO>(customerEntity);
+            return customerDto;
+        }
+
+        public CustomerDTO Delete(CustomerDTO customer)
+        {
+            Customer customer1 = _mapper.Map<Customer>(customer);
+            if (customer1.IsDeleted == true)
+            {
+                return customer;
+            }
+            else
+            {
+                //var delete = 3;
+                //product1.EntityState = (EntityStateEnum)delete;
+                customer1.IsDeleted = true;
+                _customerDAL.Update(customer1);
+
+                return _mapper.Map<CustomerDTO>(customer1);
+            }
         }
 
         public IEnumerable<CustomerDTO> GetAllCustomer()
@@ -52,6 +80,15 @@ namespace WebApplication.BLL.Logic.Implementations
             {
                 throw ex;
             }
+        }
+
+        public CustomerDTO Update(CustomerDTO customer)
+        {
+            Customer customerEntity = _mapper.Map<Customer>(customer);
+            _customerDAL.Update(customerEntity);
+            customer = _mapper.Map<CustomerDTO>(customerEntity);
+
+            return customer;
         }
     }
 }

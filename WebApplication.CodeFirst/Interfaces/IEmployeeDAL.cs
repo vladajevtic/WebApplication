@@ -10,5 +10,6 @@ namespace WebApplication.CodeFirst.Interfaces
         void Save(Employee item);
         Employee GetById(int id);
         List<Employee> GetAll(int skip, int take);
+        void Update(Employee item);
     }
 }

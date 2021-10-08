@@ -33,6 +33,24 @@ namespace WebApplication.BLL.Logic.Implementations
             return employee;
         }
 
+        public EmployeeDTO Delete(EmployeeDTO employee)
+        {
+            Employee employee1 = _mapper.Map<Employee>(employee);
+            if (employee1.IsDeleted == true)
+            {
+                return employee;
+            }
+            else
+            {
+                //var delete = 3;
+                //product1.EntityState = (EntityStateEnum)delete;
+                employee1.IsDeleted = true;
+                _employeeDAL.Update(employee1);
+
+                return _mapper.Map<EmployeeDTO>(employee1);
+            }
+        }
+
         public IEnumerable<EmployeeDTO> GetAllEmployees()
         {
             return _mapper.Map<List<EmployeeDTO>>(_employeeDAL.GetAll(0, 50));
@@ -55,6 +73,15 @@ namespace WebApplication.BLL.Logic.Implementations
             {
                 throw ex;
             }
+        }
+
+        public EmployeeDTO Update(EmployeeDTO employee)
+        {
+            Employee employeeEntity = _mapper.Map<Employee>(employee);
+            _employeeDAL.Update(employeeEntity);
+            employee = _mapper.Map<EmployeeDTO>(employeeEntity);
+
+            return employee;
         }
     }
 }

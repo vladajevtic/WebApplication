@@ -18,7 +18,7 @@ namespace WebAPP2.Controllers
     [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = AuthorizationRoles.Admin)]
+   // [Authorize(Roles = AuthorizationRoles.Admin)]
     public class EmployeeController : ControllerBase
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -54,14 +54,19 @@ namespace WebAPP2.Controllers
 
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put([FromBody] EmployeeDTO employee)
         {
+            _employeeRepository.Update(employee);
         }
 
         // DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            var employeeDel = _employeeRepository.GetEmployeeById(id);
+            _employeeRepository.Delete(employeeDel);
+            var employeeDeleted = _employeeRepository.GetEmployeeById(id);
+            
         }
     }
 }

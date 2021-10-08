@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Models;
+using WebApplication.BLL.Logic.Helpers;
 
 namespace WebAPP2.Models.Repository.Implementations
 {
@@ -19,7 +20,7 @@ namespace WebAPP2.Models.Repository.Implementations
                     Id = 1,
                     Name = "Pera",
                     ContactId = 1,
-                    Email = "nest@gmail.com",
+                   
                     ImagePath = "../image/avatar.png"
                 },
                 new CustomerDTO
@@ -27,7 +28,7 @@ namespace WebAPP2.Models.Repository.Implementations
                     Id = 2,
                     Name = "Mika",
                     ContactId = 2,
-                    Email = "nest@gmail.com",
+                   
                     ImagePath = "../image/avatar.png"
                 },
                 new CustomerDTO
@@ -35,7 +36,7 @@ namespace WebAPP2.Models.Repository.Implementations
                     Id = 3,
                     Name = "Zika",
                     ContactId = 3,
-                    Email = "nest@gmail.com",
+                   
                     ImagePath = "../image/avatar.png"
                 }
             };
@@ -50,11 +51,28 @@ namespace WebAPP2.Models.Repository.Implementations
         {
             return _customerList.Where(x => x.Id == id).FirstOrDefault();
         }
-        public CustomerDTO Add(CustomerDTO customer)
+        //public CustomerDTO Add(CustomerDTO customer)
+        //{
+        //    customer.Id = _customerList.Max(e => e.Id) + 1;
+        //    _customerList.Add(customer);
+        //    return _customerList.Where(x => x.Id == customer.Id).FirstOrDefault();
+        //}
+
+        public CustomerDTO Update(CustomerDTO customer)
         {
-            customer.Id = _customerList.Max(e => e.Id) + 1;
-            _customerList.Add(customer);
-            return _customerList.Where(x => x.Id == customer.Id).FirstOrDefault();
+            throw new NotImplementedException();
+        }
+
+        public CustomerDTO Delete(CustomerDTO customer)
+        {
+            throw new NotImplementedException();
+        }
+
+       
+
+        public CustomerDTO Add(NewCustomerModel customer)
+        {
+            throw new NotImplementedException();
         }
     }
 }

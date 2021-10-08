@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using WebApplication.BLL.Logic.Helpers;
 using WebApplication.BLL.Logic.Models;
 
 namespace WebApplication.BLL.Logic.Interfaces
@@ -9,6 +10,8 @@ namespace WebApplication.BLL.Logic.Interfaces
     {
         IEnumerable<CustomerDTO> GetAllCustomer();
         CustomerDTO GetCustomerById(int id);
-        CustomerDTO Add(CustomerDTO customer);
+        CustomerDTO Add(NewCustomerModel customer);
+        CustomerDTO Update(CustomerDTO customer);
+        CustomerDTO Delete(CustomerDTO customer);
     }
 }

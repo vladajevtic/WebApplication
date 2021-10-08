@@ -20,21 +20,21 @@ namespace SEDCWebApplication12.Controllers
             _product = product;
         }
 
-        [Route("ProductList")]
-        public IActionResult ProductList()
-        {
-            List<ProductDTO> products = _product.GetAllProduct().ToList();
-            return View(products);
-        }
+        //[Route("ProductList")]
+        //public IActionResult ProductList()
+        //{
+        //    List<ProductDTO> products = _product.GetAllProduct().ToList();
+        //    return View(products);
+        //}
 
-        [Route("ProductDetails/{id}")]
+        //[Route("ProductDetails/{id}")]
 
-        public IActionResult ProductDetails(int id)
-        {
-            var product = _product.GetProductById(id);
+        //public IActionResult ProductDetails(int id)
+        //{
+        //    var product = _product.GetProductById(id);
 
-            return View(product);
-        }
+        //    return View(product);
+        //}
 
         [Route("ProductCreate")]
         [HttpGet]

@@ -12,7 +12,7 @@ namespace WebApplication.CodeFirst.Implementations
     public class EmployeeRepository : IEmployeeDAL
     {
         private IConfiguration Configuration { get; set; }
-        public  EmployeeRepository(IConfiguration configuration)
+        public EmployeeRepository(IConfiguration configuration)
         {
             Configuration = configuration;
         }
@@ -42,8 +42,18 @@ namespace WebApplication.CodeFirst.Implementations
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
             using (var db = new ApplicationDbContext(optionBuilder.Options))
             {
-                User user = new User();   
-                db.Users.Add(user);
+                //User user = new User();   
+                db.Users.Add(item);
+                db.SaveChanges();
+            }
+        }
+
+        public void Update(Employee item)
+        {
+            var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+            using (var db = new ApplicationDbContext(optionBuilder.Options))
+            {
+                db.Entry<Employee>(item).State = EntityState.Modified;
                 db.SaveChanges();
             }
         }

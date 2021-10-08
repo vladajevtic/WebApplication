@@ -9,5 +9,7 @@ namespace WebApplication.CodeFirst.Interfaces
     {
         User GetUserByUserNameAndPassword(string userName, string password);
         User GetById(int id);
+        //void Update(int id, User user);
+        //void Save(User item);
     }
 }

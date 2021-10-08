@@ -114,12 +114,14 @@ namespace WebAPP2.Models.Repository.Implementations
             
         }
 
-        public ProductDTO Update(ProductDTO product)
+      
+
+        public ProductDTO Delete(ProductDTO product)
         {
             throw new NotImplementedException();
         }
 
-        public ProductDTO Delete(ProductDTO product)
+        public ProductDTO Update(ProductDTO product)
         {
             throw new NotImplementedException();
         }

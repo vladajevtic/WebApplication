@@ -24,28 +24,28 @@ namespace SEDCWebApplication12.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        [Route("CustomerList")]
-        public IActionResult CustomerList()
-        {
-            List<CustomerDTO> customers = _customerRepository.GetAllCustomers().ToList();
+        //[Route("CustomerList")]
+        //public IActionResult CustomerList()
+        //{
+        //   List<CustomerDTO> customers = _customerRepository.GetAllCustomers().ToList();
             
-            ViewBag.Title = "Customers";
+        //    ViewBag.Title = "Customers";
 
-            return View(customers);
-        }
-        [Route("CustomerDetails/{id}")]
-        public IActionResult CustomerDetails(int id)
-        {
-            CustomerDTO customers = _customerRepository.GetCustomerById(id);
+        //    return View(customers);
+        //}
+        //[Route("CustomerDetails/{id}")]
+        //public IActionResult CustomerDetails(int id)
+        //{
+        //    CustomerDTO customers = _customerRepository.GetCustomerById(id);
 
-            CustomerDetailsViewModel customersVM = new CustomerDetailsViewModel
-            {
-                Customer = customers,
+        //    CustomerDetailsViewModel customersVM = new CustomerDetailsViewModel
+        //    {
+        //        Customer = customers,
 
-                PageTitle = "Customer Details"
-            };
-            return View(customersVM);
-        }
+        //        PageTitle = "Customer Details"
+        //    };
+        //    return View(customersVM);
+        //}
         [HttpGet]
         public IActionResult CustomerCreate()
         {

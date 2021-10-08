@@ -11,5 +11,7 @@ namespace WebAPP2.Models.Repository.Interfaces
         IEnumerable<EmployeeDTO> GetAllEmployees();
         EmployeeDTO GetEmployeeById(int id);
         EmployeeDTO Add(EmployeeDTO employee);
+        EmployeeDTO Update(EmployeeDTO employee);
+        EmployeeDTO Delete(EmployeeDTO employee);
     }
 }

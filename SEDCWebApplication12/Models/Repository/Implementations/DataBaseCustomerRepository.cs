@@ -16,9 +16,10 @@ namespace SEDCWebApplication12.Models.Repository.Implementations
         {
             _customerManager = customerManager;
         }
+
         public CustomerDTO Add(CustomerDTO customer)
         {
-            return _customerManager.Add(customer);
+            throw new NotImplementedException();
         }
 
         public IEnumerable<CustomerDTO> GetAllCustomers()

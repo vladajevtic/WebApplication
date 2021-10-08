@@ -38,5 +38,14 @@ namespace WebAPP2.Models.Repository.Implementations
                 throw ex;
             }
         }
+
+        public EmployeeDTO Update(EmployeeDTO employee)
+        {
+            return _employeeManager.Update(employee);
+        }
+        public EmployeeDTO Delete(EmployeeDTO employee)
+        {
+            return _employeeManager.Delete(employee);
+        }
     }
 }

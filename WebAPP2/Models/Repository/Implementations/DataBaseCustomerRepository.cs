@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebApplication.BLL.Logic.Interfaces;
 using WebApplication.BLL.Logic.Models;
-
+using WebApplication.BLL.Logic.Helpers;
 
 namespace WebAPP2.Models.Repository.Implementations
 {
@@ -18,9 +18,14 @@ namespace WebAPP2.Models.Repository.Implementations
         {
             _customerManager = customerManager;
         }
-        public CustomerDTO Add(CustomerDTO customer)
+        public CustomerDTO Add(NewCustomerModel customer)
         {
             return _customerManager.Add(customer);
+        }
+
+        public CustomerDTO Delete(CustomerDTO customer)
+        {
+            return _customerManager.Delete(customer);
         }
 
         public IEnumerable<CustomerDTO> GetAllCustomers()
@@ -39,6 +44,11 @@ namespace WebAPP2.Models.Repository.Implementations
             {
                 throw ex;
             }
+        }
+
+        public CustomerDTO Update(CustomerDTO customer)
+        {
+            return _customerManager.Update(customer);
         }
     }
 }

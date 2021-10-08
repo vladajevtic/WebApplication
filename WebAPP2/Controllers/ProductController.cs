@@ -17,7 +17,7 @@ namespace WebAPP2.Controllers
     [EnableCors("MyPolicy")]
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = AuthorizationRoles.Client)]
+    //[Authorize(Roles = AuthorizationRoles.Client)]
     public class ProductController : ControllerBase
     {
         private readonly IProductRepository _product;
@@ -49,9 +49,9 @@ namespace WebAPP2.Controllers
 
         // PUT api/<ProductController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] ProductDTO product)
+        public void Put([FromBody] ProductDTO product)
         {
-            _product.Update(id, product);
+            _product.Update(product);
 
         }
 

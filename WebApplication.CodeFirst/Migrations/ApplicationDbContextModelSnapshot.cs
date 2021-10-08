@@ -143,6 +143,9 @@ namespace WebApplication.CodeFirst.Migrations
                     b.Property<string>("ImagePath")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool?>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
@@ -227,11 +230,13 @@ namespace WebApplication.CodeFirst.Migrations
 
             modelBuilder.Entity("WebApplication.CodeFirst.Entities.Customer", b =>
                 {
-                    b.HasOne("WebApplication.CodeFirst.Entities.Contact", null)
+                    b.HasOne("WebApplication.CodeFirst.Entities.Contact", "Contact")
                         .WithOne("Customer")
                         .HasForeignKey("WebApplication.CodeFirst.Entities.Customer", "ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Contact");
                 });
 
             modelBuilder.Entity("WebApplication.CodeFirst.Entities.Contact", b =>

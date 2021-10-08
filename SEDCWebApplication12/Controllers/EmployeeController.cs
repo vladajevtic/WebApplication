@@ -25,28 +25,28 @@ namespace SEDCWebApplication12.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        [Route("EmployeeList")]
-        public IActionResult EmployeeList()
-        {
-            List<EmployeeDTO> employees = _employeeRepository.GetAllEmployees().ToList();
+        //[Route("EmployeeList")]
+        //public IActionResult EmployeeList()
+        //{
+        //    List<EmployeeDTO> employees = _employeeRepository.GetAllEmployees().ToList();
 
-            ViewBag.Title = "Employees List";
-            return View(employees);
-        }
+        //    ViewBag.Title = "Employees List";
+        //    return View(employees);
+        //}
 
-        [Route("EmployeeDetails/{id}")]
-        public IActionResult EmployeeDetails(int id)
-        {
-            EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
+        //[Route("EmployeeDetails/{id}")]
+        //public IActionResult EmployeeDetails(int id)
+        //{
+        //    EmployeeDTO employee = _employeeRepository.GetEmployeeById(id);
 
-            EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel
-            {
-                Employee = employee,
+        //    EmployeeDetailsViewModel employeeVM = new EmployeeDetailsViewModel
+        //    {
+        //        Employee = employee,
 
-                PageTitle = "Employee details",
-            };
-            return View(employeeVM);
-        }
+        //        PageTitle = "Employee details",
+        //    };
+        //    return View(employeeVM);
+        //}
         [HttpGet]
         public IActionResult EmployeeCreate()
         {

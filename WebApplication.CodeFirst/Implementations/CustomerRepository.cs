@@ -42,8 +42,18 @@ namespace WebApplication.CodeFirst.Implementations
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
             using (var db = new ApplicationDbContext(optionBuilder.Options))
             {
-                User user = new User();
-                db.Users.Add(user);
+                //User user = new User();
+                db.Users.Add(item);
+                db.SaveChanges();
+            }
+        }
+
+        public void Update(Customer item)
+        {
+            var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+            using (var db = new ApplicationDbContext(optionBuilder.Options))
+            {
+                db.Entry<Customer>(item).State = EntityState.Modified;
                 db.SaveChanges();
             }
         }

@@ -12,6 +12,7 @@ namespace SEDCWebApplication.BLL.Logic.Models
         [Display(Name="Menadzer")]
         Manager = 1,
         Sales = 2,
-        Operater = 3
+        Operater = 3,
+        Customer = 4
     }
 }
