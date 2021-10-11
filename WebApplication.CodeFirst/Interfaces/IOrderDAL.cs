@@ -11,6 +11,7 @@ namespace WebApplication.CodeFirst.Interfaces
 
         Order GetById(int id);
         List<Order> GetByEmployeeId(int id);
+        List<Order> GetByCustomerId(int skip, int take, int id);
 
         List<Order> GetAll(int skip, int take);
     }

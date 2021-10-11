@@ -32,5 +32,10 @@ namespace WebAPP2.Models.Repository.Implementations
         {
             return _orderManager.Add(orderDTO);
         }
+
+        public List<OrderDTO> GetByCustomerId(int id)
+        {
+            return _orderManager.GetByCustomerId(id).ToList();
+        }
     }
 }

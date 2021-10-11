@@ -12,8 +12,12 @@ namespace WebApplication.CodeFirst.Entities
         public DateTime Date { get; set; }
         public decimal TotalAmount { get; set; }
         public int Status { get; set; }
-        public Employee Employee { get; set; }
-        public Customer Customer { get; set; }
         public ICollection<OrderItem> OrderItems { get; set; }   //[{productId,quantity}, {productId,quantity}]    
+        public int? CustomerId { get; set; }
+        public int? EmployeeId { get; set; }
+        [ForeignKey("EmployeeId")]
+        public Employee Employee { get; set; }
+        [ForeignKey("CustomerId")]
+        public Customer Customer { get; set; }
     }
 }

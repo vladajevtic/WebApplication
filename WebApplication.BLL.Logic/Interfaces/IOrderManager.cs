@@ -11,8 +11,6 @@ namespace WebApplication.BLL.Logic.Interfaces
         List<OrderDTO> GetByEmployeeId(int id);
         OrderDTO Add(OrderDTO orderDTO);
         IEnumerable<OrderDTO> GetAll();
-
-
-        
+        IEnumerable<OrderDTO> GetByCustomerId(int id);
     }
 }

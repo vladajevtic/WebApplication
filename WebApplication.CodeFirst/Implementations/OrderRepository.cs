@@ -59,5 +59,16 @@ namespace WebApplication.CodeFirst.Implementations
             }
         }
 
+        public List<Order> GetByCustomerId(int id, int skip, int take)
+        {
+            var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
+            using (var db = new ApplicationDbContext(optionBuilder.Options))
+            {
+                List<Order> result = db.Orders
+                    .Include("OrderItems").Where(e => e.CustomerId == id).Skip(skip).Take(take).ToList();
+                    
+                return result;
+            }
+        }
     }
 }

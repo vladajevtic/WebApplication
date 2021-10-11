@@ -61,6 +61,12 @@ namespace WebApplication.BLL.Logic.Implementations
            return _mapper.Map<List<OrderDTO>>(_orderDAL.GetAll(0, 50));
         }
 
+        public IEnumerable<OrderDTO> GetByCustomerId(int id)
+        {
+           List<OrderDTO> orderDTOs = _mapper.Map<List<OrderDTO>>(_orderDAL.GetByCustomerId(id,0,5));
+            return orderDTOs;
+        }
+
         public List<OrderDTO> GetByEmployeeId(int id)
         {
             return _mapper.Map<List<OrderDTO>>(_orderDAL.GetByEmployeeId(id));

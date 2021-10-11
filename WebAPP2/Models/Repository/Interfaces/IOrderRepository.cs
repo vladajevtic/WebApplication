@@ -12,5 +12,6 @@ namespace WebAPP2.Models.Repository.Interfaces
         List<OrderDTO> GetByEmployeeId(int id);
         IEnumerable<OrderDTO> GetAll();
         OrderDTO Add(OrderDTO orderDTO);
+        List<OrderDTO> GetByCustomerId(int id);
     }
 }
