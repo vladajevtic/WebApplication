@@ -11,7 +11,7 @@ namespace WebApplication.BLL.Logic.Interfaces
         IEnumerable<CustomerDTO> GetAllCustomer();
         CustomerDTO GetCustomerById(int id);
         CustomerDTO Add(NewCustomerModel customer);
-        CustomerDTO Update(CustomerDTO customer);
+        CustomerDTO Update(int id, NewCustomerModel customer);
         CustomerDTO Delete(CustomerDTO customer);
     }
 }

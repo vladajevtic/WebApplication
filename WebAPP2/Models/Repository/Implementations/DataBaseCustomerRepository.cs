@@ -46,9 +46,9 @@ namespace WebAPP2.Models.Repository.Implementations
             }
         }
 
-        public CustomerDTO Update(CustomerDTO customer)
+        public CustomerDTO Update(int id, NewCustomerModel customer)
         {
-            return _customerManager.Update(customer);
+            return _customerManager.Update(id, customer);
         }
     }
 }

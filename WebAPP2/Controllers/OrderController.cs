@@ -41,12 +41,14 @@ namespace WebAPP2.Controllers
         }
         //Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Order/{id}" for actions - WebAPP2.Controllers.OrderController.Get(WebAPP2),WebAPP2.Controllers.OrderController.GetByCustomerId(WebAPP2). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
         [Authorize(Roles = AuthorizationRoles.Client)]
+        [EnableCors("MyPolicy")]
         [Route("my")]
         [HttpGet]
         public IEnumerable<OrderDTO> GetByCustomerId(int id)
         {
             UserDTO user = (UserDTO)HttpContext.Items["User"];
-            return _orderRepository.GetByCustomerId(user.Id);
+            var myOrder = _orderRepository.GetByCustomerId(user.Id);
+            return myOrder;
         }
 
         // POST api/<OrderController>

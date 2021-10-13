@@ -3,6 +3,7 @@ C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\bin\Debug\ne
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.runtimeconfig.dev.json
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\bin\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb
+C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.csproj.AssemblyReference.cache
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.AssemblyInfoInputs.cache
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.AssemblyInfo.cs
@@ -10,4 +11,3 @@ C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\ne
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.dll
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.pdb
 C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.genruntimeconfig.cache
-C:\Users\vlada\source\repos\WebApplication\WebApplication.CodeFirst\obj\Debug\netcoreapp3.1\WebApplication.CodeFirst.csproj.AssemblyReference.cache

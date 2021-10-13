@@ -106,4 +106,3 @@ C:\Users\vlada\source\repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAP
 C:\Users\vlada\source\repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.dll
 C:\Users\vlada\source\repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.pdb
 C:\Users\vlada\source\repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.genruntimeconfig.cache
-C:\Users\vlada\source\repos\WebApplication\WebAPP2\obj\Debug\netcoreapp3.1\WebAPP2.csproj.CopyComplete

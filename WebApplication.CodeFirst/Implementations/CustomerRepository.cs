@@ -32,7 +32,7 @@ namespace WebApplication.CodeFirst.Implementations
             var optionBuilder = new DbContextOptionsBuilder<ApplicationDbContext>().UseSqlServer(Configuration.GetConnectionString("SEDC2"));
             using (var db = new ApplicationDbContext(optionBuilder.Options))
             {
-                Customer result = db.Customers.First(e => e.Id == id);
+                Customer result = db.Customers.Include(o => o.Contact).First(e => e.Id == id);
                 return result;
             }
         }

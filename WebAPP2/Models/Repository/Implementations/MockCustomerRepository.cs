@@ -58,7 +58,7 @@ namespace WebAPP2.Models.Repository.Implementations
         //    return _customerList.Where(x => x.Id == customer.Id).FirstOrDefault();
         //}
 
-        public CustomerDTO Update(CustomerDTO customer)
+        public CustomerDTO Update(int id, NewCustomerModel customer)
         {
             throw new NotImplementedException();
         }

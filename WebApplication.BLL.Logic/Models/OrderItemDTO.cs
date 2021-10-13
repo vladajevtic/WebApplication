@@ -7,6 +7,8 @@ namespace WebApplication.BLL.Logic.Models
 {
     public class OrderItemDTO
     {
+        public Product Product { get; set; }
+        
         public int ProductId { get; set; }//productId
         public int Quantity { get; set; }//quantity
 

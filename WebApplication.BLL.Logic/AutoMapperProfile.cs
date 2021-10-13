@@ -45,6 +45,7 @@ namespace WebApplication.BLL.Logic
             CreateMap<User, CustomerDTO>();
             CreateMap<ContactDTO, CustomerDTO>();
             CreateMap<Customer, NewCustomerModel>();
+            CreateMap<NewCustomerModel, Customer>();
 
             CreateMap<WebApplicationEntityFramework.Entities.Customer, CustomerDTO>()
                 .ForMember(dest => dest.Name, src => src.MapFrom(src => src.CustomerName))

@@ -82,13 +82,28 @@ namespace WebApplication.BLL.Logic.Implementations
             }
         }
 
-        public CustomerDTO Update(CustomerDTO customer)
+        public CustomerDTO Update(int id, NewCustomerModel customer)
         {
-            Customer customerEntity = _mapper.Map<Customer>(customer);
+            Customer customerEntity = _customerDAL.GetById(id);
+            //Contact contactEntity = new Contact();
+            customerEntity.Contact.Email = customer.Email;
+            //contactEntity.Email = customer.Email;
+            customerEntity.Contact.Address = customer.Address;
+            //contactEntity.Address = customer.Address;
+            customerEntity.Contact.Phone = customer.Phone;
+            //contactEntity.Phone = customer.Phone;
+            customerEntity.Name = customer.Name;
+            //customerEntity.ImagePath = customer.ImagePath;
+            customerEntity.ImagePath = customer.ImagePath;
+            //customerEntity.Contact = contactEntity;
+            //_customerDAL.Save(customerEntity);
+            //CustomerDTO customerDto = _mapper.Map<CustomerDTO>(customerEntity);
+            // return customerDto;
+            //customerEntity = _mapper.Map<Customer>(customer);
             _customerDAL.Update(customerEntity);
-            customer = _mapper.Map<CustomerDTO>(customerEntity);
+            CustomerDTO customer1 = _mapper.Map<CustomerDTO>(customerEntity);
 
-            return customer;
+            return customer1;
         }
     }
 }

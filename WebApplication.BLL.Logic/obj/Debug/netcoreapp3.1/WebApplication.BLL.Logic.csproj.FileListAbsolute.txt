@@ -14,4 +14,3 @@ C:\Users\vlada\source\repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\ne
 C:\Users\vlada\source\repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.csproj.CoreCompileInputs.cache
 C:\Users\vlada\source\repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.dll
 C:\Users\vlada\source\repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.pdb
-C:\Users\vlada\source\repos\WebApplication\WebApplication.BLL.Logic\obj\Debug\netcoreapp3.1\WebApplication.BLL.Logic.csproj.CopyComplete

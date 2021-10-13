@@ -1,9 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using WebApplication.CodeFirst.Entities;
 using WebApplication.CodeFirst.Interfaces;
 
@@ -65,7 +63,7 @@ namespace WebApplication.CodeFirst.Implementations
             using (var db = new ApplicationDbContext(optionBuilder.Options))
             {
                 List<Order> result = db.Orders
-                    .Include("OrderItems").Where(e => e.CustomerId == id).Skip(skip).Take(take).ToList();
+                    .Include(o => o.OrderItems).ThenInclude(x => x.Product).Where(e => e.CustomerId == id).Skip(skip).Take(take).ToList();
                     
                 return result;
             }

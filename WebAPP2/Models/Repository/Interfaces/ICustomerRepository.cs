@@ -12,7 +12,7 @@ namespace WebAPP2.Models.Repository.Interfaces
         IEnumerable<CustomerDTO> GetAllCustomers();
         CustomerDTO GetCustomerById(int id);
         CustomerDTO Add(NewCustomerModel customer);
-        CustomerDTO Update(CustomerDTO customer);
+        CustomerDTO Update(int id, NewCustomerModel customer);
         CustomerDTO Delete(CustomerDTO customer);
 
     }

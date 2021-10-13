@@ -13,6 +13,7 @@ namespace WebApplication.BLL.Logic.Models
         [Required(ErrorMessage = "Ime je obavezno")]
         public string Name { get; set; }
         public int ContactId { get; set; }
+        public Contact Contact { get; set; }
         public string ImagePath { get; set; }
         public List<Order> Orders { get; set; }
     }
